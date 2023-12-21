@@ -28,7 +28,6 @@ struct ContentView: View {
                         Text(user)
                             .padding([.top, .bottom], 12)
                             .frame(maxHeight: .infinity)
-                            .fontWeight(.medium)
                             .foregroundStyle(Color(red: 120 / 255, green: 120 / 255, blue: 120 / 255))
                         Divider()
                             .frame(height: 1)
