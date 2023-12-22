@@ -21,7 +21,7 @@ struct ContentView: View {
                 VStack(alignment: .leading, spacing: 0) {
                     HStack {
                         RoundedRectangle(cornerRadius: 3)
-                            .fill(themeManager.theme.secondaryColor)
+                            .fill(themeManager.selectedTheme.secondaryColor)
                             .frame(width: 15, height: 15)
                         Text(user)
                             .font(.custom(Fonts.Inter.medium, size: 20))
@@ -39,7 +39,7 @@ struct ContentView: View {
             }
             .navigationBarTitleDisplayMode(.inline)
             .toolbarColorScheme(.dark, for: .navigationBar)
-            .toolbarBackground(themeManager.theme.primaryColor, for: .navigationBar)
+            .toolbarBackground(themeManager.selectedTheme.primaryColor, for: .navigationBar)
             .toolbarBackground(.visible, for: .navigationBar)
             .listStyle(.plain)
             .background(Colors.listBackgroundGrey)
@@ -68,8 +68,15 @@ struct ContentView: View {
                                         themeManager.updateTheme(theme)
                                         isColorSheetOpen = false
                                     } label: {
-                                        Circle()
-                                            .fill(type.primaryColor.gradient.opacity(0.8))
+                                        if type == themeManager.selectedTheme.type {
+                                            Image(systemName: "checkmark")
+                                                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                                                .background(type.primaryColor.gradient.opacity(0.8))
+                                                .clipShape(.circle)
+                                        } else {
+                                            Circle()
+                                                .fill(type.primaryColor.gradient.opacity(0.8))
+                                        }
                                     }
                                     .frame(width: 50, height: 50)
                                     Spacer()

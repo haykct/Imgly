@@ -10,11 +10,11 @@ import SwiftUI
 final class ThemeManager: ObservableObject {
     // MARK: Private properties
 
-    @Published private(set) var theme: Theme = BlueTheme()
+    @Published private(set) var selectedTheme: Theme = BlueTheme()
 
     // MARK: Public methods
 
     func updateTheme(_ theme: Theme) {
-        self.theme = theme
+        self.selectedTheme = theme
     }
 }

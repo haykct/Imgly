@@ -26,5 +26,5 @@ struct BrownTheme: Theme {
 struct PurpleTheme: Theme {
     let type: ThemeType = .purple
     let primaryColor = Colors.primaryPurple
-    let secondaryColor = Colors.secondaryTan
+    let secondaryColor = Colors.secondaryPink
 }

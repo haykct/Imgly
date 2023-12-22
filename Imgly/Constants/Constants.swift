@@ -27,5 +27,5 @@ enum Colors {
     static let primaryBrown = Color(.primaryBrown)
     static let secondaryStoneBlue = Color(.secondaryStoneBlue)
     static let primaryPurple = Color(.primaryPurple)
-    static let secondaryTan = Color(.secondaryTan)
+    static let secondaryPink = Color(.secondaryPink)
 }
