@@ -19,6 +19,9 @@
 		26DDAD732B3505E8001856A6 /* Inter-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 26DDAD6F2B350221001856A6 /* Inter-Regular.otf */; };
 		26DDAD742B3505EB001856A6 /* Inter-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 26DDAD6C2B350221001856A6 /* Inter-SemiBold.otf */; };
 		26DDAD772B3507A1001856A6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DDAD762B3507A1001856A6 /* Constants.swift */; };
+		26DDAD7A2B35B6BD001856A6 /* ThemeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DDAD792B35B6BD001856A6 /* ThemeType.swift */; };
+		26DDAD7D2B35BCC0001856A6 /* ThemeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DDAD7C2B35BCC0001856A6 /* ThemeProtocol.swift */; };
+		26DDAD7F2B35BCF4001856A6 /* Themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DDAD7E2B35BCF4001856A6 /* Themes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		26DDAD6F2B350221001856A6 /* Inter-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.otf"; sourceTree = "<group>"; };
 		26DDAD702B3503B9001856A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26DDAD762B3507A1001856A6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		26DDAD792B35B6BD001856A6 /* ThemeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeType.swift; sourceTree = "<group>"; };
+		26DDAD7C2B35BCC0001856A6 /* ThemeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeProtocol.swift; sourceTree = "<group>"; };
+		26DDAD7E2B35BCF4001856A6 /* Themes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Themes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,7 @@
 				26DDAD652B34FE5A001856A6 /* SupportingFiles */,
 				26DDAD632B34FE38001856A6 /* App */,
 				26DDAD642B34FE3F001856A6 /* Views */,
+				26DDAD782B35B6A4001856A6 /* Utilities */,
 				26DDAD752B350769001856A6 /* Constants */,
 				26DDAD682B3501A7001856A6 /* Fonts */,
 				26DDAD692B3501E0001856A6 /* Preview Content */,
@@ -129,6 +136,24 @@
 				26DDAD762B3507A1001856A6 /* Constants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		26DDAD782B35B6A4001856A6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				26DDAD7B2B35BC92001856A6 /* Theme */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		26DDAD7B2B35BC92001856A6 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				26DDAD792B35B6BD001856A6 /* ThemeType.swift */,
+				26DDAD7C2B35BCC0001856A6 /* ThemeProtocol.swift */,
+				26DDAD7E2B35BCF4001856A6 /* Themes.swift */,
+			);
+			path = Theme;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,8 +262,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				26DDAD4B2B3353F5001856A6 /* ContentView.swift in Sources */,
+				26DDAD7F2B35BCF4001856A6 /* Themes.swift in Sources */,
 				26DDAD492B3353F5001856A6 /* ImglyApp.swift in Sources */,
+				26DDAD7D2B35BCC0001856A6 /* ThemeProtocol.swift in Sources */,
 				26DDAD772B3507A1001856A6 /* Constants.swift in Sources */,
+				26DDAD7A2B35B6BD001856A6 /* ThemeType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

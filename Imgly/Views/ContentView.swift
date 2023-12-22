@@ -10,6 +10,7 @@ import Swinject
 
 struct ContentView: View {
     @State private var users = ["David", "Jack", "Bob", "Tommy"]
+    @State private var isColorSheetOpen = false
 
     var body: some View {
         NavigationStack {
@@ -30,19 +31,24 @@ struct ContentView: View {
             }
             .navigationBarTitleDisplayMode(.inline)
             .toolbarColorScheme(.dark, for: .navigationBar)
-            .toolbarBackground(Colors.navBarBlue, for: .navigationBar)
+            .toolbarBackground(Colors.primaryBlue, for: .navigationBar)
             .toolbarBackground(.visible, for: .navigationBar)
             .listStyle(.plain)
             .background(Colors.listBackgroundGrey)
+            .scrollContentBackground(.hidden)
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
                     Button(action: {
-
+                        isColorSheetOpen = true
                     }, label: {
                         Image("colorSettings")
                             .resizable()
                             .frame(width: 23, height: 23)
                     })
+                    .sheet(isPresented: $isColorSheetOpen) {
+                        Text("Hello")
+                            .presentationDetents([.height(200)])
+                    }
                 }
 
                 ToolbarItem(placement: .principal) {
