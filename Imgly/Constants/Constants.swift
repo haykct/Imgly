@@ -22,4 +22,10 @@ enum Colors {
     static let listTextGrey = Color(.listTextGrey)
     static let primaryBlue = Color(.primaryBlue)
     static let secondaryTurquoise = Color(.secondaryTurquoise)
+    static let primaryCoral = Color(.primaryCoral)
+    static let secondaryBlue = Color(.secondaryBlue)
+    static let primaryBrown = Color(.primaryBrown)
+    static let secondaryStoneBlue = Color(.secondaryStoneBlue)
+    static let primaryPurple = Color(.primaryPurple)
+    static let secondaryTan = Color(.secondaryTan)
 }

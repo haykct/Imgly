@@ -11,8 +11,20 @@ struct BlueTheme: Theme {
     let secondaryColor = Colors.secondaryTurquoise
 }
 
-struct RedTheme: Theme {
-    let type: ThemeType = .blue
-    let primaryColor = Colors.listTextGrey
-    let secondaryColor = Colors.listTextGrey
+struct CoralTheme: Theme {
+    let type: ThemeType = .coral
+    let primaryColor = Colors.primaryCoral
+    let secondaryColor = Colors.secondaryBlue
+}
+
+struct BrownTheme: Theme {
+    let type: ThemeType = .brown
+    let primaryColor = Colors.primaryBrown
+    let secondaryColor = Colors.secondaryStoneBlue
+}
+
+struct PurpleTheme: Theme {
+    let type: ThemeType = .purple
+    let primaryColor = Colors.primaryPurple
+    let secondaryColor = Colors.secondaryTan
 }

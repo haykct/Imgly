@@ -12,18 +12,23 @@ struct ContentView: View {
     // MARK: Private properties
 
     @EnvironmentObject private var themeManager: ThemeManager
-    @State private var users = ["David", "Jack", "Bob", "Tommy"]
+    @State private var users = ["David Anderson", "Jack", "Bob", "Tommy"]
     @State private var isColorSheetOpen = false
 
     var body: some View {
         NavigationStack {
             List($users, id: \.self, editActions: .all) { $user in
                 VStack(alignment: .leading, spacing: 0) {
-                    Text(user)
-                        .font(.custom(Fonts.Inter.medium, size: 20))
-                        .padding([.top, .bottom], 13)
-                        .frame(maxHeight: .infinity)
-                        .foregroundStyle(Colors.listTextGrey)
+                    HStack {
+                        RoundedRectangle(cornerRadius: 3)
+                            .fill(themeManager.theme.secondaryColor)
+                            .frame(width: 15, height: 15)
+                        Text(user)
+                            .font(.custom(Fonts.Inter.medium, size: 20))
+                            .padding([.top, .bottom], 13)
+                            .frame(maxHeight: .infinity)
+                            .foregroundStyle(Colors.listTextGrey)
+                    }
                     Divider()
                         .frame(height: 1)
                         .overlay(Colors.listDividerGrey)
@@ -64,7 +69,7 @@ struct ContentView: View {
                                         isColorSheetOpen = false
                                     } label: {
                                         Circle()
-                                            .fill(type.color.gradient.opacity(0.8))
+                                            .fill(type.primaryColor.gradient.opacity(0.8))
                                     }
                                     .frame(width: 50, height: 50)
                                     Spacer()

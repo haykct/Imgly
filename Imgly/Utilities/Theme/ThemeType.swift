@@ -8,23 +8,23 @@
 import SwiftUI
 
 enum ThemeType: CaseIterable {
-    case blue, coral, green, gray
+    case blue, coral, brown, purple
 
-    var color: Color {
+    var primaryColor: Color {
         switch self {
         case .blue: Colors.primaryBlue
-        case .coral: .red
-        case .green: .green
-        case .gray: Color.gray
+        case .coral: Colors.primaryCoral
+        case .brown: Colors.primaryBrown
+        case .purple: Colors.primaryPurple
         }
     }
 
     func makeTheme() -> Theme {
         switch self {
         case .blue: BlueTheme()
-        case .coral: RedTheme()
-        case .green: BlueTheme()
-        case .gray: RedTheme()
+        case .coral: CoralTheme()
+        case .brown: BrownTheme()
+        case .purple: PurpleTheme()
         }
     }
 }
