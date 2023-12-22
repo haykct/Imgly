@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		269649D72B35FA750036A3DD /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269649D62B35FA750036A3DD /* ThemeManager.swift */; };
 		26DDAD492B3353F5001856A6 /* ImglyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DDAD482B3353F5001856A6 /* ImglyApp.swift */; };
 		26DDAD4B2B3353F5001856A6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DDAD4A2B3353F5001856A6 /* ContentView.swift */; };
 		26DDAD4D2B3353F7001856A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26DDAD4C2B3353F7001856A6 /* Images.xcassets */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		269649D62B35FA750036A3DD /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		26DDAD452B3353F5001856A6 /* Imgly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Imgly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26DDAD482B3353F5001856A6 /* ImglyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImglyApp.swift; sourceTree = "<group>"; };
 		26DDAD4A2B3353F5001856A6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				26DDAD792B35B6BD001856A6 /* ThemeType.swift */,
 				26DDAD7C2B35BCC0001856A6 /* ThemeProtocol.swift */,
 				26DDAD7E2B35BCF4001856A6 /* Themes.swift */,
+				269649D62B35FA750036A3DD /* ThemeManager.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				26DDAD7D2B35BCC0001856A6 /* ThemeProtocol.swift in Sources */,
 				26DDAD772B3507A1001856A6 /* Constants.swift in Sources */,
 				26DDAD7A2B35B6BD001856A6 /* ThemeType.swift in Sources */,
+				269649D72B35FA750036A3DD /* ThemeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

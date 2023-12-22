@@ -10,3 +10,9 @@ struct BlueTheme: Theme {
     let primaryColor = Colors.primaryBlue
     let secondaryColor = Colors.secondaryTurquoise
 }
+
+struct RedTheme: Theme {
+    let type: ThemeType = .blue
+    let primaryColor = Colors.listTextGrey
+    let secondaryColor = Colors.listTextGrey
+}
