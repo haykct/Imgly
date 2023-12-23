@@ -24,7 +24,7 @@ struct LabelListRow: View {
             HStack {
                 RoundedRectangle(cornerRadius: 3)
                     .fill(themeManager.selectedTheme.secondaryColor)
-                    .frame(width: 15, height: 15)
+                    .frame(width: 14, height: 14)
                 Text(label)
                     .font(.custom(Fonts.Inter.medium, size: 20))
                     .padding([.top, .bottom], 13)
@@ -43,4 +43,5 @@ struct LabelListRow: View {
 
 #Preview {
     LabelListRow(label: "Text")
+        .environmentObject(ThemeManager())
 }

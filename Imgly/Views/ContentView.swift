@@ -36,7 +36,7 @@ struct ContentView: View {
                     }
 
                     ToolbarItem(placement: .principal) {
-                        Text("List")
+                        Text(LocalizationKeys.list)
                             .font(.custom(Fonts.Inter.semiBold, size: 20))
                     }
 

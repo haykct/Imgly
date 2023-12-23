@@ -15,7 +15,7 @@ struct ThemeSettings: View {
 
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Select Your Theme")
+            Text(LocalizationKeys.selectTheme)
                 .font(.custom(Fonts.Inter.medium, size: 24))
                 .foregroundStyle(Colors.listTextGrey)
                 .padding([.leading, .top], 20)
@@ -59,4 +59,5 @@ struct ThemeSettings: View {
 
 #Preview {
     ThemeSettings(isColorSheetOpen: .constant(false))
+        .environmentObject(ThemeManager())
 }

@@ -26,6 +26,8 @@
 		26FD08C12B3660100074DE59 /* ListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD08C02B3660100074DE59 /* ListRow.swift */; };
 		26FD08C32B3660920074DE59 /* ThemeSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD08C22B3660920074DE59 /* ThemeSettings.swift */; };
 		26FD08C52B3660E00074DE59 /* LabelList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD08C42B3660E00074DE59 /* LabelList.swift */; };
+		26FD08D22B3734C30074DE59 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 26FD08D12B3734C30074DE59 /* Localizable.xcstrings */; };
+		26FD08D52B3739500074DE59 /* LocalizedKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD08D42B3739500074DE59 /* LocalizedKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		26FD08C02B3660100074DE59 /* ListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRow.swift; sourceTree = "<group>"; };
 		26FD08C22B3660920074DE59 /* ThemeSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeSettings.swift; sourceTree = "<group>"; };
 		26FD08C42B3660E00074DE59 /* LabelList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelList.swift; sourceTree = "<group>"; };
+		26FD08D12B3734C30074DE59 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		26FD08D42B3739500074DE59 /* LocalizedKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,7 @@
 				26DDAD642B34FE3F001856A6 /* Views */,
 				26DDAD782B35B6A4001856A6 /* Utilities */,
 				26DDAD752B350769001856A6 /* Constants */,
+				26FD08C82B37328F0074DE59 /* Localization */,
 				26DDAD682B3501A7001856A6 /* Fonts */,
 				26DDAD692B3501E0001856A6 /* Preview Content */,
 			);
@@ -105,9 +110,9 @@
 			isa = PBXGroup;
 			children = (
 				26DDAD4A2B3353F5001856A6 /* ContentView.swift */,
+				26FD08C42B3660E00074DE59 /* LabelList.swift */,
 				26FD08C02B3660100074DE59 /* ListRow.swift */,
 				26FD08C22B3660920074DE59 /* ThemeSettings.swift */,
-				26FD08C42B3660E00074DE59 /* LabelList.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -166,6 +171,15 @@
 				269649D62B35FA750036A3DD /* ThemeManager.swift */,
 			);
 			path = Theme;
+			sourceTree = "<group>";
+		};
+		26FD08C82B37328F0074DE59 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				26FD08D42B3739500074DE59 /* LocalizedKeys.swift */,
+				26FD08D12B3734C30074DE59 /* Localizable.xcstrings */,
+			);
+			path = Localization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +256,7 @@
 				26DDAD6B2B350206001856A6 /* Preview Assets.xcassets in Resources */,
 				26DDAD722B3505E5001856A6 /* Inter-Medium.otf in Resources */,
 				26DDAD4D2B3353F7001856A6 /* Images.xcassets in Resources */,
+				26FD08D22B3734C30074DE59 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +290,7 @@
 			files = (
 				26DDAD4B2B3353F5001856A6 /* ContentView.swift in Sources */,
 				26DDAD7F2B35BCF4001856A6 /* Themes.swift in Sources */,
+				26FD08D52B3739500074DE59 /* LocalizedKeys.swift in Sources */,
 				26DDAD492B3353F5001856A6 /* ImglyApp.swift in Sources */,
 				26FD08C32B3660920074DE59 /* ThemeSettings.swift in Sources */,
 				26DDAD7D2B35BCC0001856A6 /* ThemeProtocol.swift in Sources */,

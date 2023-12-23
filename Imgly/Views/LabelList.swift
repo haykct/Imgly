@@ -24,4 +24,5 @@ struct LabelList: View {
 
 #Preview {
     LabelList()
+        .environmentObject(ThemeManager())
 }
