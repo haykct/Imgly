@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-enum ThemeType: CaseIterable {
+enum ThemeType: Int, CaseIterable {
     case blue, coral, brown, purple
 
     var primaryColor: Color {

@@ -20,22 +20,28 @@ struct ThemeSettings: View {
                 .foregroundStyle(Colors.listTextGrey)
                 .padding([.leading, .top], 20)
             HStack {
-                ForEach(ThemeType.allCases, id: \.self) { type in
+                ForEach(ThemeType.allCases, id: \.self) { themeType in
                     Spacer()
                     Button {
-                        let theme = type.makeTheme()
-
-                        themeManager.updateTheme(theme)
+                        themeManager.updateTheme(themeType)
                         isColorSheetOpen = false
                     } label: {
-                        if type == themeManager.selectedTheme.type {
+                        if themeType == themeManager.selectedTheme.type {
                             Image(systemName: "checkmark")
                                 .frame(maxWidth: .infinity, maxHeight: .infinity)
-                                .background(type.primaryColor.gradient.opacity(0.8))
+                                .background(
+                                    themeType.primaryColor
+                                        .gradient
+                                        .opacity(0.8)
+                                )
                                 .clipShape(.circle)
                         } else {
                             Circle()
-                                .fill(type.primaryColor.gradient.opacity(0.8))
+                                .fill(
+                                    themeType.primaryColor
+                                    .gradient
+                                    .opacity(0.8)
+                                )
                         }
                     }
                     .frame(width: 50, height: 50)
