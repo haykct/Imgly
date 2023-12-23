@@ -23,6 +23,9 @@
 		26DDAD7A2B35B6BD001856A6 /* ThemeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DDAD792B35B6BD001856A6 /* ThemeType.swift */; };
 		26DDAD7D2B35BCC0001856A6 /* ThemeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DDAD7C2B35BCC0001856A6 /* ThemeProtocol.swift */; };
 		26DDAD7F2B35BCF4001856A6 /* Themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DDAD7E2B35BCF4001856A6 /* Themes.swift */; };
+		26FD08C12B3660100074DE59 /* ListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD08C02B3660100074DE59 /* ListRow.swift */; };
+		26FD08C32B3660920074DE59 /* ThemeSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD08C22B3660920074DE59 /* ThemeSettings.swift */; };
+		26FD08C52B3660E00074DE59 /* LabelList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD08C42B3660E00074DE59 /* LabelList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		26DDAD792B35B6BD001856A6 /* ThemeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeType.swift; sourceTree = "<group>"; };
 		26DDAD7C2B35BCC0001856A6 /* ThemeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeProtocol.swift; sourceTree = "<group>"; };
 		26DDAD7E2B35BCF4001856A6 /* Themes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Themes.swift; sourceTree = "<group>"; };
+		26FD08C02B3660100074DE59 /* ListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRow.swift; sourceTree = "<group>"; };
+		26FD08C22B3660920074DE59 /* ThemeSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeSettings.swift; sourceTree = "<group>"; };
+		26FD08C42B3660E00074DE59 /* LabelList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,9 @@
 			isa = PBXGroup;
 			children = (
 				26DDAD4A2B3353F5001856A6 /* ContentView.swift */,
+				26FD08C02B3660100074DE59 /* ListRow.swift */,
+				26FD08C22B3660920074DE59 /* ThemeSettings.swift */,
+				26FD08C42B3660E00074DE59 /* LabelList.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -267,9 +276,12 @@
 				26DDAD4B2B3353F5001856A6 /* ContentView.swift in Sources */,
 				26DDAD7F2B35BCF4001856A6 /* Themes.swift in Sources */,
 				26DDAD492B3353F5001856A6 /* ImglyApp.swift in Sources */,
+				26FD08C32B3660920074DE59 /* ThemeSettings.swift in Sources */,
 				26DDAD7D2B35BCC0001856A6 /* ThemeProtocol.swift in Sources */,
+				26FD08C12B3660100074DE59 /* ListRow.swift in Sources */,
 				26DDAD772B3507A1001856A6 /* Constants.swift in Sources */,
 				26DDAD7A2B35B6BD001856A6 /* ThemeType.swift in Sources */,
+				26FD08C52B3660E00074DE59 /* LabelList.swift in Sources */,
 				269649D72B35FA750036A3DD /* ThemeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
