@@ -11,7 +11,6 @@ struct ContentView: View {
     // MARK: Private properties
 
     @EnvironmentObject private var themeManager: ThemeManager
-    @State private var isColorSheetOpen = false
 
     var body: some View {
         NavigationStack {
@@ -22,17 +21,7 @@ struct ContentView: View {
                 .toolbarBackground(.visible, for: .navigationBar)
                 .toolbar {
                     ToolbarItem(placement: .topBarLeading) {
-                        Button(action: {
-                            isColorSheetOpen = true
-                        }, label: {
-                            Image("colorSettings")
-                                .resizable()
-                                .frame(width: 23, height: 23)
-                        })
-                        .sheet(isPresented: $isColorSheetOpen) {
-                            ThemeSettings(isColorSheetOpen: $isColorSheetOpen)
-                                .presentationDetents([.height(200)])
-                        }
+                        ThemeSettingsButton()
                     }
 
                     ToolbarItem(placement: .principal) {

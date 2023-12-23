@@ -35,9 +35,6 @@ struct LabelListRow: View {
                 .frame(height: 1)
                 .overlay(Colors.listDividerGrey)
         }
-        .listRowBackground(Colors.listBackgroundGrey)
-        .listRowSeparator(.hidden)
-        .listRowInsets(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
     }
 }
 

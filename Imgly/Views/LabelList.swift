@@ -14,7 +14,13 @@ struct LabelList: View {
 
     var body: some View {
         List($labels, id: \.self, editActions: .all) { $label in
-            LabelListRow(label: label)
+            NavigationLink(value: label) {
+                LabelListRow(label: label)
+            }
+            .listRowBackground(Colors.listBackgroundGrey)
+            .listRowSeparator(.hidden)
+            .listRowInsets(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
+
         }
         .listStyle(.plain)
         .background(Colors.listBackgroundGrey)

@@ -33,6 +33,9 @@
 		26FD08DE2B374E540074DE59 /* ListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD08DD2B374E540074DE59 /* ListRequest.swift */; };
 		26FD08E02B374EA60074DE59 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD08DF2B374EA60074DE59 /* NetworkError.swift */; };
 		26FD08E22B374F940074DE59 /* DetailRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD08E12B374F940074DE59 /* DetailRequest.swift */; };
+		26FD08E52B3752A70074DE59 /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD08E42B3752A70074DE59 /* ListModel.swift */; };
+		26FD09042B37800B0074DE59 /* FirstAppear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD09032B37800B0074DE59 /* FirstAppear.swift */; };
+		26FD09062B3784280074DE59 /* ThemeSettingsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD09052B3784280074DE59 /* ThemeSettingsButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +65,9 @@
 		26FD08DD2B374E540074DE59 /* ListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRequest.swift; sourceTree = "<group>"; };
 		26FD08DF2B374EA60074DE59 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		26FD08E12B374F940074DE59 /* DetailRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRequest.swift; sourceTree = "<group>"; };
+		26FD08E42B3752A70074DE59 /* ListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
+		26FD09032B37800B0074DE59 /* FirstAppear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAppear.swift; sourceTree = "<group>"; };
+		26FD09052B3784280074DE59 /* ThemeSettingsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeSettingsButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,9 +104,12 @@
 			children = (
 				26DDAD652B34FE5A001856A6 /* SupportingFiles */,
 				26DDAD632B34FE38001856A6 /* App */,
+				26FD08E32B3752830074DE59 /* Models */,
 				26DDAD642B34FE3F001856A6 /* Views */,
+				26FD08E62B3752BD0074DE59 /* ViewModels */,
 				26FD08D62B37472D0074DE59 /* Services */,
 				26DDAD782B35B6A4001856A6 /* Managers */,
+				26FD09012B377FB20074DE59 /* Utilities */,
 				26DDAD752B350769001856A6 /* Constants */,
 				26FD08C82B37328F0074DE59 /* Localization */,
 				26DDAD682B3501A7001856A6 /* Fonts */,
@@ -124,6 +133,7 @@
 				26FD08C42B3660E00074DE59 /* LabelList.swift */,
 				26FD08C02B3660100074DE59 /* ListRow.swift */,
 				26FD08C22B3660920074DE59 /* ThemeSettings.swift */,
+				26FD09052B3784280074DE59 /* ThemeSettingsButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -219,6 +229,37 @@
 				26FD08E12B374F940074DE59 /* DetailRequest.swift */,
 			);
 			path = DataRequest;
+			sourceTree = "<group>";
+		};
+		26FD08E32B3752830074DE59 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				26FD08E42B3752A70074DE59 /* ListModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		26FD08E62B3752BD0074DE59 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		26FD09012B377FB20074DE59 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				26FD09022B377FC80074DE59 /* Modifiers */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		26FD09022B377FC80074DE59 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				26FD09032B37800B0074DE59 /* FirstAppear.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,9 +375,12 @@
 				26DDAD492B3353F5001856A6 /* ImglyApp.swift in Sources */,
 				26FD08C32B3660920074DE59 /* ThemeSettings.swift in Sources */,
 				26DDAD7D2B35BCC0001856A6 /* ThemeProtocol.swift in Sources */,
+				26FD09042B37800B0074DE59 /* FirstAppear.swift in Sources */,
 				26FD08DE2B374E540074DE59 /* ListRequest.swift in Sources */,
+				26FD09062B3784280074DE59 /* ThemeSettingsButton.swift in Sources */,
 				26FD08C12B3660100074DE59 /* ListRow.swift in Sources */,
 				26FD08E02B374EA60074DE59 /* NetworkError.swift in Sources */,
+				26FD08E52B3752A70074DE59 /* ListModel.swift in Sources */,
 				26FD08E22B374F940074DE59 /* DetailRequest.swift in Sources */,
 				26DDAD772B3507A1001856A6 /* Constants.swift in Sources */,
 				26DDAD7A2B35B6BD001856A6 /* ThemeType.swift in Sources */,
