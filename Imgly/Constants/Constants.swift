@@ -19,7 +19,13 @@ enum Fonts {
 enum Colors {
     static let listBackgroundGrey = Color(.listBackgroundGrey)
     static let listDividerGrey = Color(.listDividerGrey)
-    static let listIconTurquoise = Color(.listIconTurquoise)
     static let listTextGrey = Color(.listTextGrey)
-    static let navBarBlue = Color(.navBarBlue)
+    static let primaryBlue = Color(.primaryBlue)
+    static let secondaryTurquoise = Color(.secondaryTurquoise)
+    static let primaryCoral = Color(.primaryCoral)
+    static let secondaryBlue = Color(.secondaryBlue)
+    static let primaryBrown = Color(.primaryBrown)
+    static let secondaryStoneBlue = Color(.secondaryStoneBlue)
+    static let primaryPurple = Color(.primaryPurple)
+    static let secondaryPink = Color(.secondaryPink)
 }

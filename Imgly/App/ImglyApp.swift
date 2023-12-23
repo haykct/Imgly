@@ -12,6 +12,7 @@ struct ImglyApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(ThemeManager())
         }
     }
 }
