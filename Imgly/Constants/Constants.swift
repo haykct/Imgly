@@ -29,3 +29,7 @@ enum Colors {
     static let primaryPurple = Color(.primaryPurple)
     static let secondaryPink = Color(.secondaryPink)
 }
+
+enum BaseUrls {
+    static let listApi = "https://ubique.img.ly/"
+}
