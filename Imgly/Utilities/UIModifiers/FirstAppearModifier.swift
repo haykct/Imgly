@@ -1,5 +1,5 @@
 //
-//  FirstAppear.swift
+//  FirstAppearModifier.swift
 //  Imgly
 //
 //  Created by Hayk Hayrapetyan on 23.12.23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-private struct FirstAppear: ViewModifier {
+struct FirstAppearModifier: ViewModifier {
     // MARK: Private properties
 
     private let callback: () -> Void
@@ -33,6 +33,6 @@ private struct FirstAppear: ViewModifier {
 
 extension View {
     func onFirstAppear(_ callback: @escaping () -> Void) -> some View {
-        modifier(FirstAppear(callback: callback))
+        modifier(FirstAppearModifier(callback: callback))
     }
 }

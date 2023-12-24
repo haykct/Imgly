@@ -38,6 +38,7 @@ struct ThemeSettings: View {
                                         .opacity(0.8)
                                 )
                                 .clipShape(.circle)
+                                .tint(Colors.listBackgroundGrey)
                         } else {
                             Circle()
                                 .fill(

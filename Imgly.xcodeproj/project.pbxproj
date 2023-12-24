@@ -34,12 +34,14 @@
 		26FD08E02B374EA60074DE59 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD08DF2B374EA60074DE59 /* NetworkError.swift */; };
 		26FD08E22B374F940074DE59 /* DetailRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD08E12B374F940074DE59 /* DetailRequest.swift */; };
 		26FD08E52B3752A70074DE59 /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD08E42B3752A70074DE59 /* ListModel.swift */; };
-		26FD09042B37800B0074DE59 /* FirstAppear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD09032B37800B0074DE59 /* FirstAppear.swift */; };
+		26FD09042B37800B0074DE59 /* FirstAppearModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD09032B37800B0074DE59 /* FirstAppearModifier.swift */; };
 		26FD09062B3784280074DE59 /* ThemeSettingsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD09052B3784280074DE59 /* ThemeSettingsButton.swift */; };
 		26FD09082B3787F30074DE59 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD09072B3787F30074DE59 /* ListViewModel.swift */; };
 		26FD090B2B378A6D0074DE59 /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD090A2B378A6D0074DE59 /* Injection.swift */; };
 		26FD090D2B378AAD0074DE59 /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD090C2B378AAD0074DE59 /* Injected.swift */; };
 		26FD090F2B379FCC0074DE59 /* ItemsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD090E2B379FCC0074DE59 /* ItemsList.swift */; };
+		26FD09112B38D1C40074DE59 /* AppNavigationBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD09102B38D1C40074DE59 /* AppNavigationBarModifier.swift */; };
+		26FD09132B38E0EA0074DE59 /* ListRowModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD09122B38E0EA0074DE59 /* ListRowModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,12 +72,14 @@
 		26FD08DF2B374EA60074DE59 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		26FD08E12B374F940074DE59 /* DetailRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRequest.swift; sourceTree = "<group>"; };
 		26FD08E42B3752A70074DE59 /* ListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
-		26FD09032B37800B0074DE59 /* FirstAppear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAppear.swift; sourceTree = "<group>"; };
+		26FD09032B37800B0074DE59 /* FirstAppearModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAppearModifier.swift; sourceTree = "<group>"; };
 		26FD09052B3784280074DE59 /* ThemeSettingsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeSettingsButton.swift; sourceTree = "<group>"; };
 		26FD09072B3787F30074DE59 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		26FD090A2B378A6D0074DE59 /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
 		26FD090C2B378AAD0074DE59 /* Injected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injected.swift; sourceTree = "<group>"; };
 		26FD090E2B379FCC0074DE59 /* ItemsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsList.swift; sourceTree = "<group>"; };
+		26FD09102B38D1C40074DE59 /* AppNavigationBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationBarModifier.swift; sourceTree = "<group>"; };
+		26FD09122B38E0EA0074DE59 /* ListRowModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -268,7 +272,9 @@
 		26FD09022B377FC80074DE59 /* UIModifiers */ = {
 			isa = PBXGroup;
 			children = (
-				26FD09032B37800B0074DE59 /* FirstAppear.swift */,
+				26FD09032B37800B0074DE59 /* FirstAppearModifier.swift */,
+				26FD09102B38D1C40074DE59 /* AppNavigationBarModifier.swift */,
+				26FD09122B38E0EA0074DE59 /* ListRowModifier.swift */,
 			);
 			path = UIModifiers;
 			sourceTree = "<group>";
@@ -397,17 +403,19 @@
 				26DDAD492B3353F5001856A6 /* ImglyApp.swift in Sources */,
 				26FD08C32B3660920074DE59 /* ThemeSettings.swift in Sources */,
 				26DDAD7D2B35BCC0001856A6 /* ThemeProtocol.swift in Sources */,
-				26FD09042B37800B0074DE59 /* FirstAppear.swift in Sources */,
+				26FD09042B37800B0074DE59 /* FirstAppearModifier.swift in Sources */,
 				26FD08DE2B374E540074DE59 /* ListRequest.swift in Sources */,
 				26FD09062B3784280074DE59 /* ThemeSettingsButton.swift in Sources */,
 				26FD09082B3787F30074DE59 /* ListViewModel.swift in Sources */,
 				26FD08C12B3660100074DE59 /* ListRow.swift in Sources */,
+				26FD09132B38E0EA0074DE59 /* ListRowModifier.swift in Sources */,
 				26FD08E02B374EA60074DE59 /* NetworkError.swift in Sources */,
 				26FD08E52B3752A70074DE59 /* ListModel.swift in Sources */,
 				26FD08E22B374F940074DE59 /* DetailRequest.swift in Sources */,
 				26DDAD772B3507A1001856A6 /* Constants.swift in Sources */,
 				26FD090F2B379FCC0074DE59 /* ItemsList.swift in Sources */,
 				26DDAD7A2B35B6BD001856A6 /* ThemeType.swift in Sources */,
+				26FD09112B38D1C40074DE59 /* AppNavigationBarModifier.swift in Sources */,
 				26FD08C52B3660E00074DE59 /* ListContainer.swift in Sources */,
 				26FD08D92B3747B50074DE59 /* NetworkService.swift in Sources */,
 				269649D72B35FA750036A3DD /* ThemeManager.swift in Sources */,

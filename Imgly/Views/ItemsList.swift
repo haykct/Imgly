@@ -14,22 +14,43 @@ struct ItemsList: View {
 
     var body: some View {
         List($items, id: \.listID, editActions: .all) { $item in
-            NavigationLink {
-                if item.children.isEmpty {
+            if item.children.isEmpty {
+                if item.id != nil {
+                    NavigationLink {
 
+                    } label: {
+                        ListRow(label: item.label ?? LocalizationKeys.notAvailable)
+                    }
+                    .listRowStyle()
                 } else {
-                    ItemsList(items: $item.children)
+                    ListRow(label: item.label ?? LocalizationKeys.notAvailable)
+                        .listRowStyle()
                 }
-            } label: {
-                ListRow(label: item.label ?? LocalizationKeys.notAvailable)
+            } else {
+                NavigationLink {
+                    ItemsList(items: $item.children)
+                } label: {
+                    ListRow(label: item.label ?? LocalizationKeys.notAvailable)
+                }
+                .listRowStyle()
             }
-            .listRowBackground(Colors.listBackgroundGrey)
-            .listRowSeparator(.hidden)
-            .listRowInsets(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
         }
         .listStyle(.plain)
         .background(Colors.listBackgroundGrey)
         .scrollContentBackground(.hidden)
+        .navigationBarTitleDisplayMode(.inline)
+        .appNavigationBarStyle()
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                Text(LocalizationKeys.list)
+                    .font(.custom(Fonts.Inter.semiBold, size: 20))
+            }
+
+            ToolbarItem(placement: .topBarTrailing) {
+                EditButton()
+                    .font(.custom(Fonts.Inter.regular, size: 20))
+            }
+        }
     }
 }
 
