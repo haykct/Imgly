@@ -8,7 +8,7 @@
 import SwiftUI
 
 final class ThemeManager: ObservableObject {
-    // MARK: Private properties
+    // MARK: Public properties
 
     @Published private(set) var selectedTheme: Theme = {
         let themeRawValue = UserDefaults.standard.integer(forKey: "themeRawValue")

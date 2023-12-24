@@ -12,6 +12,28 @@
         }
       }
     },
+    "n_a" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "N/A"
+          }
+        }
+      }
+    },
+    "no_internet" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No internet connection. Please check your internet connection and try again."
+          }
+        }
+      }
+    },
     "select_theme" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -19,6 +41,28 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Select Your Theme"
+          }
+        }
+      }
+    },
+    "try_later" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Something unexpected happened. Please try again later."
+          }
+        }
+      }
+    },
+    "unexpected_format" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The data received is in an unexpected format. Please contact support for assistance."
           }
         }
       }
