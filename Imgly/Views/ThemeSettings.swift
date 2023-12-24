@@ -8,10 +8,13 @@
 import SwiftUI
 
 struct ThemeSettings: View {
+    // MARK: Public properties
+
+    @Binding private(set) var isColorSheetOpen: Bool
+
     // MARK: Private properties
 
     @EnvironmentObject private var themeManager: ThemeManager
-    @Binding private(set) var isColorSheetOpen: Bool
 
     var body: some View {
         VStack(alignment: .leading) {

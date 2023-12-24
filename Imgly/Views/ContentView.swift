@@ -14,7 +14,7 @@ struct ContentView: View {
 
     var body: some View {
         NavigationStack {
-            LabelList()
+            ListContainer(listViewModel: ListViewModel())
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbarColorScheme(.dark, for: .navigationBar)
                 .toolbarBackground(themeManager.selectedTheme.primaryColor, for: .navigationBar)

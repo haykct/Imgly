@@ -1,8 +1,8 @@
 //
 //  Request.swift
-//  Forecast
+//  Imgly
 //
-//  Created by Hayk Hayrapetyan on 01.08.23.
+//  Created by Hayk Hayrapetyan on 23.12.23.
 //
 
 import Alamofire

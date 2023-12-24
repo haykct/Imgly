@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LabelListRow: View {
+struct ListRow: View {
     // MARK: Private properties
 
     private let label: String
@@ -39,6 +39,6 @@ struct LabelListRow: View {
 }
 
 #Preview {
-    LabelListRow(label: "Text")
+    ListRow(label: "Text")
         .environmentObject(ThemeManager())
 }

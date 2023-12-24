@@ -12,6 +12,17 @@
         }
       }
     },
+    "n_a" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "N/A"
+          }
+        }
+      }
+    },
     "no_internet" : {
       "extractionState" : "manual",
       "localizations" : {
