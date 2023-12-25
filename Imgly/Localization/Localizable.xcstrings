@@ -1,11 +1,22 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "Description" : {
-
-    },
     "e20d9958-abff-59f4-8561-0c76292dad73" : {
 
+    },
+    "Entry 1" : {
+
+    },
+    "entry_description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Description"
+          }
+        }
+      }
     },
     "last_modified_at" : {
       "extractionState" : "manual",

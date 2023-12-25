@@ -17,7 +17,7 @@ struct ItemsList: View {
             if item.children.isEmpty {
                 if item.id != nil {
                     NavigationLink {
-                        DetailView()
+                        EntryDetailView()
                     } label: {
                         ListRow(label: item.label ?? LocalizationKeys.notAvailable)
                     }

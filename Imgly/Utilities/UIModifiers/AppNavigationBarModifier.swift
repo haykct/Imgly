@@ -14,9 +14,9 @@ private struct AppNavigationBarModifier: ViewModifier {
 
     func body(content: Content) -> some View {
         content
+            .toolbarBackground(.visible, for: .navigationBar)
             .toolbarColorScheme(.dark, for: .navigationBar)
             .toolbarBackground(themeManager.selectedTheme.primaryColor, for: .navigationBar)
-            .toolbarBackground(.visible, for: .navigationBar)
     }
 }
 

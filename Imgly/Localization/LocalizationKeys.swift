@@ -11,4 +11,5 @@ enum LocalizationKeys {
     static let notAvailable = String(localized: "n_a")
     static let lastModifiedAt = String(localized: "last_modified_at")
     static let lastModifiedBy = String(localized: "last_modified_by")
+    static let entryDescription = String(localized: "entry_description")
 }

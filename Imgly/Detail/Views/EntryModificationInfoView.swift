@@ -24,10 +24,10 @@ struct EntryModificationInfoView: View {
         HStack {
             Text(titleText)
                 .font(.custom(Fonts.Inter.medium, size: 15))
-                .foregroundStyle(Color(red: 102 / 255, green: 104 / 255, blue: 108 / 255))
+                .foregroundStyle(Colors.entryDetailGrey)
             Text(dateText)
                 .font(.custom(Fonts.Inter.semiBold, size: 14))
-                .foregroundStyle(Color(red: 70 / 255, green: 110 / 255, blue: 134 / 255))
+                .foregroundStyle(Colors.entryDetailBlue)
                 .lineLimit(2)
         }
     }
