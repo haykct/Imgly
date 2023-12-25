@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		269649D72B35FA750036A3DD /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269649D62B35FA750036A3DD /* ThemeManager.swift */; };
 		26DDAD492B3353F5001856A6 /* ImglyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DDAD482B3353F5001856A6 /* ImglyApp.swift */; };
-		26DDAD4B2B3353F5001856A6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DDAD4A2B3353F5001856A6 /* ContentView.swift */; };
+		26DDAD4B2B3353F5001856A6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DDAD4A2B3353F5001856A6 /* MainView.swift */; };
 		26DDAD4D2B3353F7001856A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26DDAD4C2B3353F7001856A6 /* Images.xcassets */; };
 		26DDAD582B34B3AB001856A6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 26DDAD572B34B3AB001856A6 /* Alamofire */; };
 		26DDAD5B2B34B463001856A6 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 26DDAD5A2B34B463001856A6 /* Swinject */; };
@@ -24,8 +24,8 @@
 		26DDAD7D2B35BCC0001856A6 /* ThemeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DDAD7C2B35BCC0001856A6 /* ThemeProtocol.swift */; };
 		26DDAD7F2B35BCF4001856A6 /* Themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DDAD7E2B35BCF4001856A6 /* Themes.swift */; };
 		26FD08C12B3660100074DE59 /* ListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD08C02B3660100074DE59 /* ListRow.swift */; };
-		26FD08C32B3660920074DE59 /* ThemeSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD08C22B3660920074DE59 /* ThemeSettings.swift */; };
-		26FD08C52B3660E00074DE59 /* ListContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD08C42B3660E00074DE59 /* ListContainer.swift */; };
+		26FD08C32B3660920074DE59 /* ThemeSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD08C22B3660920074DE59 /* ThemeSettingsView.swift */; };
+		26FD08C52B3660E00074DE59 /* ListContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD08C42B3660E00074DE59 /* ListContainerView.swift */; };
 		26FD08D22B3734C30074DE59 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 26FD08D12B3734C30074DE59 /* Localizable.xcstrings */; };
 		26FD08D52B3739500074DE59 /* LocalizationKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD08D42B3739500074DE59 /* LocalizationKeys.swift */; };
 		26FD08D92B3747B50074DE59 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD08D82B3747B50074DE59 /* NetworkService.swift */; };
@@ -42,13 +42,16 @@
 		26FD090F2B379FCC0074DE59 /* ItemsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD090E2B379FCC0074DE59 /* ItemsList.swift */; };
 		26FD09112B38D1C40074DE59 /* AppNavigationBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD09102B38D1C40074DE59 /* AppNavigationBarModifier.swift */; };
 		26FD09132B38E0EA0074DE59 /* ListRowModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD09122B38E0EA0074DE59 /* ListRowModifier.swift */; };
+		26FD091D2B38F0E80074DE59 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD091C2B38F0E80074DE59 /* DetailView.swift */; };
+		26FD09212B39AFCA0074DE59 /* EntryCreationInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD09202B39AFCA0074DE59 /* EntryCreationInfoView.swift */; };
+		26FD09232B39B9E10074DE59 /* EntryModificationInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD09222B39B9E10074DE59 /* EntryModificationInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		269649D62B35FA750036A3DD /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		26DDAD452B3353F5001856A6 /* Imgly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Imgly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26DDAD482B3353F5001856A6 /* ImglyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImglyApp.swift; sourceTree = "<group>"; };
-		26DDAD4A2B3353F5001856A6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		26DDAD4A2B3353F5001856A6 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		26DDAD4C2B3353F7001856A6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		26DDAD662B34FE99001856A6 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		26DDAD6A2B350206001856A6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -62,8 +65,8 @@
 		26DDAD7C2B35BCC0001856A6 /* ThemeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeProtocol.swift; sourceTree = "<group>"; };
 		26DDAD7E2B35BCF4001856A6 /* Themes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Themes.swift; sourceTree = "<group>"; };
 		26FD08C02B3660100074DE59 /* ListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRow.swift; sourceTree = "<group>"; };
-		26FD08C22B3660920074DE59 /* ThemeSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeSettings.swift; sourceTree = "<group>"; };
-		26FD08C42B3660E00074DE59 /* ListContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListContainer.swift; sourceTree = "<group>"; };
+		26FD08C22B3660920074DE59 /* ThemeSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeSettingsView.swift; sourceTree = "<group>"; };
+		26FD08C42B3660E00074DE59 /* ListContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListContainerView.swift; sourceTree = "<group>"; };
 		26FD08D12B3734C30074DE59 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		26FD08D42B3739500074DE59 /* LocalizationKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationKeys.swift; sourceTree = "<group>"; };
 		26FD08D82B3747B50074DE59 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
@@ -80,6 +83,9 @@
 		26FD090E2B379FCC0074DE59 /* ItemsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsList.swift; sourceTree = "<group>"; };
 		26FD09102B38D1C40074DE59 /* AppNavigationBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationBarModifier.swift; sourceTree = "<group>"; };
 		26FD09122B38E0EA0074DE59 /* ListRowModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowModifier.swift; sourceTree = "<group>"; };
+		26FD091C2B38F0E80074DE59 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		26FD09202B39AFCA0074DE59 /* EntryCreationInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryCreationInfoView.swift; sourceTree = "<group>"; };
+		26FD09222B39B9E10074DE59 /* EntryModificationInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryModificationInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,16 +120,17 @@
 		26DDAD472B3353F5001856A6 /* Imgly */ = {
 			isa = PBXGroup;
 			children = (
-				26DDAD652B34FE5A001856A6 /* SupportingFiles */,
 				26DDAD632B34FE38001856A6 /* App */,
-				26FD08E32B3752830074DE59 /* Models */,
-				26DDAD642B34FE3F001856A6 /* Views */,
-				26FD08E62B3752BD0074DE59 /* ViewModels */,
+				26FD09142B38EFF20074DE59 /* Views */,
+				26FD09152B38F01F0074DE59 /* List */,
+				26FD09162B38F0400074DE59 /* Detail */,
 				26FD08D62B37472D0074DE59 /* Services */,
 				26DDAD782B35B6A4001856A6 /* Managers */,
 				26FD09012B377FB20074DE59 /* Utilities */,
 				26DDAD752B350769001856A6 /* Constants */,
 				26FD08C82B37328F0074DE59 /* Localization */,
+				26FD091E2B38F42B0074DE59 /* Plists */,
+				26DDAD652B34FE5A001856A6 /* Assets */,
 				26DDAD682B3501A7001856A6 /* Fonts */,
 				26DDAD692B3501E0001856A6 /* Preview Content */,
 			);
@@ -141,24 +148,20 @@
 		26DDAD642B34FE3F001856A6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				26DDAD4A2B3353F5001856A6 /* ContentView.swift */,
-				26FD08C42B3660E00074DE59 /* ListContainer.swift */,
+				26FD08C42B3660E00074DE59 /* ListContainerView.swift */,
 				26FD090E2B379FCC0074DE59 /* ItemsList.swift */,
 				26FD08C02B3660100074DE59 /* ListRow.swift */,
-				26FD08C22B3660920074DE59 /* ThemeSettings.swift */,
-				26FD09052B3784280074DE59 /* ThemeSettingsButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		26DDAD652B34FE5A001856A6 /* SupportingFiles */ = {
+		26DDAD652B34FE5A001856A6 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				26DDAD702B3503B9001856A6 /* Info.plist */,
 				26DDAD4C2B3353F7001856A6 /* Images.xcassets */,
 				26DDAD662B34FE99001856A6 /* Colors.xcassets */,
 			);
-			path = SupportingFiles;
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		26DDAD682B3501A7001856A6 /* Fonts */ = {
@@ -288,6 +291,76 @@
 			path = DI;
 			sourceTree = "<group>";
 		};
+		26FD09142B38EFF20074DE59 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				26FD091F2B390CE30074DE59 /* Theme */,
+				26DDAD4A2B3353F5001856A6 /* MainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		26FD09152B38F01F0074DE59 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				26FD08E32B3752830074DE59 /* Models */,
+				26DDAD642B34FE3F001856A6 /* Views */,
+				26FD08E62B3752BD0074DE59 /* ViewModels */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		26FD09162B38F0400074DE59 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				26FD091A2B38F0BD0074DE59 /* Models */,
+				26FD09192B38F0B20074DE59 /* Views */,
+				26FD091B2B38F0C70074DE59 /* ViewModels */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		26FD09192B38F0B20074DE59 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				26FD091C2B38F0E80074DE59 /* DetailView.swift */,
+				26FD09202B39AFCA0074DE59 /* EntryCreationInfoView.swift */,
+				26FD09222B39B9E10074DE59 /* EntryModificationInfoView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		26FD091A2B38F0BD0074DE59 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		26FD091B2B38F0C70074DE59 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		26FD091E2B38F42B0074DE59 /* Plists */ = {
+			isa = PBXGroup;
+			children = (
+				26DDAD702B3503B9001856A6 /* Info.plist */,
+			);
+			path = Plists;
+			sourceTree = "<group>";
+		};
+		26FD091F2B390CE30074DE59 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				26FD08C22B3660920074DE59 /* ThemeSettingsView.swift */,
+				26FD09052B3784280074DE59 /* ThemeSettingsButton.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -395,28 +468,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				26FD090B2B378A6D0074DE59 /* Injection.swift in Sources */,
-				26DDAD4B2B3353F5001856A6 /* ContentView.swift in Sources */,
+				26DDAD4B2B3353F5001856A6 /* MainView.swift in Sources */,
 				26FD08DC2B374DB30074DE59 /* Request.swift in Sources */,
 				26FD090D2B378AAD0074DE59 /* Injected.swift in Sources */,
 				26DDAD7F2B35BCF4001856A6 /* Themes.swift in Sources */,
 				26FD08D52B3739500074DE59 /* LocalizationKeys.swift in Sources */,
 				26DDAD492B3353F5001856A6 /* ImglyApp.swift in Sources */,
-				26FD08C32B3660920074DE59 /* ThemeSettings.swift in Sources */,
+				26FD08C32B3660920074DE59 /* ThemeSettingsView.swift in Sources */,
 				26DDAD7D2B35BCC0001856A6 /* ThemeProtocol.swift in Sources */,
 				26FD09042B37800B0074DE59 /* FirstAppearModifier.swift in Sources */,
 				26FD08DE2B374E540074DE59 /* ListRequest.swift in Sources */,
 				26FD09062B3784280074DE59 /* ThemeSettingsButton.swift in Sources */,
+				26FD091D2B38F0E80074DE59 /* DetailView.swift in Sources */,
+				26FD09232B39B9E10074DE59 /* EntryModificationInfoView.swift in Sources */,
 				26FD09082B3787F30074DE59 /* ListViewModel.swift in Sources */,
 				26FD08C12B3660100074DE59 /* ListRow.swift in Sources */,
 				26FD09132B38E0EA0074DE59 /* ListRowModifier.swift in Sources */,
 				26FD08E02B374EA60074DE59 /* NetworkError.swift in Sources */,
 				26FD08E52B3752A70074DE59 /* ListModel.swift in Sources */,
+				26FD09212B39AFCA0074DE59 /* EntryCreationInfoView.swift in Sources */,
 				26FD08E22B374F940074DE59 /* DetailRequest.swift in Sources */,
 				26DDAD772B3507A1001856A6 /* Constants.swift in Sources */,
 				26FD090F2B379FCC0074DE59 /* ItemsList.swift in Sources */,
 				26DDAD7A2B35B6BD001856A6 /* ThemeType.swift in Sources */,
 				26FD09112B38D1C40074DE59 /* AppNavigationBarModifier.swift in Sources */,
-				26FD08C52B3660E00074DE59 /* ListContainer.swift in Sources */,
+				26FD08C52B3660E00074DE59 /* ListContainerView.swift in Sources */,
 				26FD08D92B3747B50074DE59 /* NetworkService.swift in Sources */,
 				269649D72B35FA750036A3DD /* ThemeManager.swift in Sources */,
 			);
@@ -555,7 +631,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Imgly/SupportingFiles/Info.plist;
+				INFOPLIST_FILE = Imgly/Plists/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -585,7 +661,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Imgly/SupportingFiles/Info.plist;
+				INFOPLIST_FILE = Imgly/Plists/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

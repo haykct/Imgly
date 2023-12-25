@@ -17,7 +17,7 @@ struct ItemsList: View {
             if item.children.isEmpty {
                 if item.id != nil {
                     NavigationLink {
-
+                        DetailView()
                     } label: {
                         ListRow(label: item.label ?? LocalizationKeys.notAvailable)
                     }
@@ -48,7 +48,7 @@ struct ItemsList: View {
 
             ToolbarItem(placement: .topBarTrailing) {
                 EditButton()
-                    .font(.custom(Fonts.Inter.regular, size: 20))
+                    .font(.custom(Fonts.Inter.regular, size: 18))
             }
         }
     }
@@ -56,4 +56,5 @@ struct ItemsList: View {
 
 #Preview {
     ItemsList(items: .constant([]))
+        .environmentObject(ThemeManager())
 }

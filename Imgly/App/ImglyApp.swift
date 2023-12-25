@@ -11,7 +11,7 @@ import SwiftUI
 struct ImglyApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
                 .environmentObject(ThemeManager())
         }
     }

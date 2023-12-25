@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AppNavigationBarModifier: ViewModifier {
+private struct AppNavigationBarModifier: ViewModifier {
     // MARK: Private properties
 
     @EnvironmentObject private var themeManager: ThemeManager

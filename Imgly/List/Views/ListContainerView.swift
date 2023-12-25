@@ -1,5 +1,5 @@
 //
-//  ListContainer.swift
+//  ListContainerView.swift
 //  Imgly
 //
 //  Created by Hayk Hayrapetyan on 23.12.23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ListContainer: View {
+struct ListContainerView: View {
     // MARK: Public properties
 
     @StateObject var listViewModel: ListViewModel
@@ -21,6 +21,6 @@ struct ListContainer: View {
 }
 
 #Preview {
-    ListContainer(listViewModel: ListViewModel())
+    ListContainerView(listViewModel: ListViewModel())
         .environmentObject(ThemeManager())
 }

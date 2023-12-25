@@ -1,6 +1,34 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "Description" : {
+
+    },
+    "e20d9958-abff-59f4-8561-0c76292dad73" : {
+
+    },
+    "last_modified_at" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Last modified at:"
+          }
+        }
+      }
+    },
+    "last_modified_by" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Last modified by:"
+          }
+        }
+      }
+    },
     "list" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -33,6 +61,9 @@
           }
         }
       }
+    },
+    "Rebongig joeto gusku tiwwa vapumed cupi ni dep tijur uc rifrezlap peha dobpu gonnehe jija doduvce. Mis silot welug oho gitofpud cif eh ec awara voc volupif fi soimja. Ovi sovwombov farol bajifo vumutu zitoci eb hor dujot efinal fikrubebi wakimah toh rasovumi tipdolum ga wakorca ma. Azonev jajrali atu sufvegta ozudogin iplecvit futaki segjajem kowrize reroref lacevlu gen soufino hud defize filtimot." : {
+
     },
     "select_theme" : {
       "extractionState" : "manual",
