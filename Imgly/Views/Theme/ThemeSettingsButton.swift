@@ -33,6 +33,8 @@ struct ThemeSettingsButton: View {
             ThemeSettingsView(isColorSheetOpen: $isColorSheetOpen)
                 .presentationDetents([.height(200)])
         }
+        .opacity(themeManager.isButtonVisible ? 1 : 0)
+        .animation(.easeInOut(duration: 0.3), value: themeManager.isButtonVisible)
     }
 }
 

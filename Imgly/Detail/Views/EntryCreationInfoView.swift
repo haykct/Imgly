@@ -25,7 +25,7 @@ struct EntryCreationInfoView: View {
             .foregroundStyle(.white)
             .padding(10)
             .frame(maxHeight: 55)
-            .background(themeManager.selectedTheme.secondaryColor)
+            .background(themeManager.selectedTheme.primaryColor)
             .clipShape(.rect(cornerRadius: 7))
     }
 }

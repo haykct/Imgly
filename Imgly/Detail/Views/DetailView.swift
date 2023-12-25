@@ -18,7 +18,7 @@ struct DetailView: View {
                 .resizable()
                 .frame(width: 95, height: 110)
                 .padding(.top, 80)
-                .foregroundStyle(themeManager.selectedTheme.secondaryColor)
+                .foregroundStyle(themeManager.selectedTheme.primaryColor)
             VStack(alignment: .leading, spacing: 0) {
                 Text("e20d9958-abff-59f4-8561-0c76292dad73")
                     .font(.custom(Fonts.Inter.bold, size: 20))
@@ -65,6 +65,15 @@ struct DetailView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         .background(Colors.listBackgroundGrey)
+        .onTapGesture {
+            themeManager.toggleButtonVisibility()
+        }
+        .onAppear {
+            themeManager.changeButtonvisibility(visible: false)
+        }
+        .onDisappear {
+            themeManager.changeButtonvisibility(visible: true)
+        }
     }
 }
 
