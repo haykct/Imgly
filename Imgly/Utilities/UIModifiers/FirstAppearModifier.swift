@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FirstAppearModifier: ViewModifier {
+private struct FirstAppearModifier: ViewModifier {
     // MARK: Private properties
 
     private let callback: () -> Void

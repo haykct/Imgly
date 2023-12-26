@@ -17,7 +17,7 @@ final class ListViewModel: ObservableObject {
     @Injected private var networkService: NetworkService
     private var cancellable: AnyCancellable?
 
-    // MARK: Public properties
+    // MARK: Public methods
 
     func requestListData() {
         let request = ListRequest()

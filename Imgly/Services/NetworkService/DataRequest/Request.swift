@@ -14,5 +14,5 @@ protocol Request {
 
 extension Request {
     var url: String { baseURL + path }
-    var baseURL: String { BaseUrls.listApi }
+    var baseURL: String { BaseUrls.imglyApi }
 }

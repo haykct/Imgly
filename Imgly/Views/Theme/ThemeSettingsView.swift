@@ -1,5 +1,5 @@
 //
-//  ThemeSettings.swift
+//  ThemeSettingsView.swift
 //  Imgly
 //
 //  Created by Hayk Hayrapetyan on 23.12.23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ThemeSettings: View {
+struct ThemeSettingsView: View {
     // MARK: Public properties
 
     @Binding private(set) var isColorSheetOpen: Bool
@@ -38,7 +38,7 @@ struct ThemeSettings: View {
                                         .opacity(0.8)
                                 )
                                 .clipShape(.circle)
-                                .tint(Colors.listBackgroundGrey)
+                                .tint(.white)
                         } else {
                             Circle()
                                 .fill(
@@ -62,6 +62,6 @@ struct ThemeSettings: View {
 }
 
 #Preview {
-    ThemeSettings(isColorSheetOpen: .constant(false))
+    ThemeSettingsView(isColorSheetOpen: .constant(false))
         .environmentObject(ThemeManager())
 }

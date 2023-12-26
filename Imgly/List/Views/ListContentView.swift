@@ -1,5 +1,5 @@
 //
-//  ItemsList.swift
+//  ListContentView.swift
 //  Imgly
 //
 //  Created by Hayk Hayrapetyan on 24.12.23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ItemsList: View {
+struct ListContentView: View {
     // MARK: Public properties
 
     @Binding private(set) var items: [ListModel]
@@ -15,9 +15,11 @@ struct ItemsList: View {
     var body: some View {
         List($items, id: \.listID, editActions: .all) { $item in
             if item.children.isEmpty {
-                if item.id != nil {
+                if let id = item.id {
                     NavigationLink {
+                        let viewModel = EntryDetailViewModel(id: id)
 
+                        EntryDetailView(titleText: item.label ?? "", viewModel: viewModel)
                     } label: {
                         ListRow(label: item.label ?? LocalizationKeys.notAvailable)
                     }
@@ -28,7 +30,7 @@ struct ItemsList: View {
                 }
             } else {
                 NavigationLink {
-                    ItemsList(items: $item.children)
+                    ListContentView(items: $item.children)
                 } label: {
                     ListRow(label: item.label ?? LocalizationKeys.notAvailable)
                 }
@@ -38,7 +40,6 @@ struct ItemsList: View {
         .listStyle(.plain)
         .background(Colors.listBackgroundGrey)
         .scrollContentBackground(.hidden)
-        .navigationBarTitleDisplayMode(.inline)
         .appNavigationBarStyle()
         .toolbar {
             ToolbarItem(placement: .principal) {
@@ -48,12 +49,13 @@ struct ItemsList: View {
 
             ToolbarItem(placement: .topBarTrailing) {
                 EditButton()
-                    .font(.custom(Fonts.Inter.regular, size: 20))
+                    .font(.custom(Fonts.Inter.regular, size: 18))
             }
         }
     }
 }
 
 #Preview {
-    ItemsList(items: .constant([]))
+    ListContentView(items: .constant([]))
+        .environmentObject(ThemeManager())
 }

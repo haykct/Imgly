@@ -20,7 +20,7 @@ struct ThemeSettingsButton: View {
             Image("colorSettings")
                 .resizable()
                 .frame(width: 35, height: 35)
-                .tint(Colors.listBackgroundGrey)
+                .tint(.white)
         })
         .frame(width: 70, height: 70)
         .background(
@@ -30,9 +30,11 @@ struct ThemeSettingsButton: View {
         )
         .clipShape(.circle)
         .sheet(isPresented: $isColorSheetOpen) {
-            ThemeSettings(isColorSheetOpen: $isColorSheetOpen)
+            ThemeSettingsView(isColorSheetOpen: $isColorSheetOpen)
                 .presentationDetents([.height(200)])
         }
+        .opacity(themeManager.isButtonVisible ? 1 : 0)
+        .animation(.easeInOut(duration: 0.3), value: themeManager.isButtonVisible)
     }
 }
 

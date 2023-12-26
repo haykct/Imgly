@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ListRowModifier: ViewModifier {
+private struct ListRowModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
             .listRowBackground(Colors.listBackgroundGrey)

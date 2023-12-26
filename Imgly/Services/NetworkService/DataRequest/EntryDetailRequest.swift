@@ -1,18 +1,18 @@
 //
-//  DetailRequest.swift
+//  EntryDetailRequest.swift
 //  Imgly
 //
 //  Created by Hayk Hayrapetyan on 23.12.23.
 //
 
-struct DetailRequest: Request {
+struct EntryDetailRequest: Request {
     // MARK: Private properties
 
     private let id: String
 
     // MARK: Public properties
 
-    var path: String { "frontend-tha/data.json" + id }
+    var path: String { "frontend-tha/entries/\(id).json" }
 
     // MARK: Initializers
 

@@ -28,8 +28,10 @@ enum Colors {
     static let secondaryStoneBlue = Color(.secondaryStoneBlue)
     static let primaryPurple = Color(.primaryPurple)
     static let secondaryPink = Color(.secondaryPink)
+    static let entryDetailGrey = Color(.entryDetailGrey)
+    static let entryDetailBlue = Color(.entryDetailBlue)
 }
 
 enum BaseUrls {
-    static let listApi = "https://ubique.img.ly/"
+    static let imglyApi = "https://ubique.img.ly/"
 }

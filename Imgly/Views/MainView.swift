@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MainView.swift
 //  Imgly
 //
 //  Created by Hayk Hayrapetyan on 20.12.23.
@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MainView: View {
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
             NavigationStack {
-                ListContainer(listViewModel: ListViewModel())
+                ListView(viewModel: ListViewModel())
             }
 
             ThemeSettingsButton()
@@ -21,6 +21,6 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    MainView()
         .environmentObject(ThemeManager())
 }

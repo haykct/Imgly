@@ -10,6 +10,7 @@ import SwiftUI
 final class ThemeManager: ObservableObject {
     // MARK: Public properties
 
+    @Published private(set) var isButtonVisible = true
     @Published private(set) var selectedTheme: Theme = {
         let themeRawValue = UserDefaults.standard.integer(forKey: "themeRawValue")
         let themeType: ThemeType = .init(rawValue: themeRawValue) ?? .blue
@@ -23,5 +24,13 @@ final class ThemeManager: ObservableObject {
         UserDefaults.standard.set(themeType.rawValue, forKey: "themeRawValue")
 
         self.selectedTheme = themeType.makeTheme()
+    }
+
+    func toggleButtonVisibility() {
+        isButtonVisible.toggle()
+    }
+
+    func changeButtonvisibility(visible: Bool) {
+        isButtonVisible = visible
     }
 }
