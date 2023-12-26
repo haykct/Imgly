@@ -11,7 +11,7 @@ struct MainView: View {
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
             NavigationStack {
-                ListContainerView(viewModel: ListViewModel())
+                ListView(viewModel: ListViewModel())
             }
 
             ThemeSettingsButton()

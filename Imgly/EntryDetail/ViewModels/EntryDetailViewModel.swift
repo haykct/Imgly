@@ -34,7 +34,7 @@ final class EntryDetailViewModel: ObservableObject {
                 guard case let .failure(error) = completion else { return }
                 //Handle error
             } receiveValue: { [unowned self] detail in
-                viewData = EntryDetailViewData(model: detail)
+                viewData = EntryDetailViewData.makeViewData(model: detail)
             }
     }
 }

@@ -1,5 +1,5 @@
 //
-//  ItemsList.swift
+//  ListContentView.swift
 //  Imgly
 //
 //  Created by Hayk Hayrapetyan on 24.12.23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ItemsList: View {
+struct ListContentView: View {
     // MARK: Public properties
 
     @Binding private(set) var items: [ListModel]
@@ -19,7 +19,7 @@ struct ItemsList: View {
                     NavigationLink {
                         let viewModel = EntryDetailViewModel(id: id)
 
-                        EntryDetailView(viewModel: viewModel)
+                        EntryDetailView(titleText: item.label ?? "", viewModel: viewModel)
                     } label: {
                         ListRow(label: item.label ?? LocalizationKeys.notAvailable)
                     }
@@ -30,7 +30,7 @@ struct ItemsList: View {
                 }
             } else {
                 NavigationLink {
-                    ItemsList(items: $item.children)
+                    ListContentView(items: $item.children)
                 } label: {
                     ListRow(label: item.label ?? LocalizationKeys.notAvailable)
                 }
@@ -40,7 +40,6 @@ struct ItemsList: View {
         .listStyle(.plain)
         .background(Colors.listBackgroundGrey)
         .scrollContentBackground(.hidden)
-        .navigationBarTitleDisplayMode(.inline)
         .appNavigationBarStyle()
         .toolbar {
             ToolbarItem(placement: .principal) {
@@ -57,6 +56,6 @@ struct ItemsList: View {
 }
 
 #Preview {
-    ItemsList(items: .constant([]))
+    ListContentView(items: .constant([]))
         .environmentObject(ThemeManager())
 }
