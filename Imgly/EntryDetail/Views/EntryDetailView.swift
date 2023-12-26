@@ -18,13 +18,17 @@ struct EntryDetailView: View {
     @EnvironmentObject private var themeManager: ThemeManager
 
     var body: some View {
-        if let viewData = viewModel.viewData {
-            EntryDetailContentView(viewData: viewData, titleText: titleText)
+        if let error = viewModel.networkError {
+            ErrorView(error: error, titleText: titleText)
         } else {
-            Spinner(titleText: titleText)
-                .onFirstAppear {
-                    viewModel.requestDetailData()
-                }
+            if let viewData = viewModel.viewData {
+                EntryDetailContentView(viewData: viewData, titleText: titleText)
+            } else {
+                Spinner(titleText: titleText)
+                    .onFirstAppear {
+                        viewModel.requestDetailData()
+                    }
+            }
         }
     }
 }

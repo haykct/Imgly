@@ -17,9 +17,8 @@ struct ListContentView: View {
             if item.children.isEmpty {
                 if let id = item.id {
                     NavigationLink {
-                        let viewModel = EntryDetailViewModel(id: id)
-
-                        EntryDetailView(titleText: item.label ?? "", viewModel: viewModel)
+                        EntryDetailView(titleText: item.label ?? "",
+                                        viewModel: EntryDetailViewModel(id: id))
                     } label: {
                         ListRow(label: item.label ?? LocalizationKeys.notAvailable)
                     }

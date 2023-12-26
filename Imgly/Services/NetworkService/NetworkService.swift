@@ -22,7 +22,6 @@ final class DefaultNetworkService: NetworkService {
 
     init(session: Session = AF) {
         self.session = session
-        
     }
 
     // MARK: Public methods

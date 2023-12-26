@@ -11,6 +11,7 @@ final class EntryDetailViewModel: ObservableObject {
     // MARK: Public properties
 
     @Published var viewData: EntryDetailViewData?
+    @Published var networkError: NetworkError?
 
     // MARK: Private properties
 
@@ -30,9 +31,10 @@ final class EntryDetailViewModel: ObservableObject {
         let request = EntryDetailRequest(id: id)
 
         cancellable = networkService.request(request)
-            .sink { completion in
+            .sink { [unowned self] completion in
                 guard case let .failure(error) = completion else { return }
-                //Handle error
+
+                networkError = error
             } receiveValue: { [unowned self] detail in
                 viewData = EntryDetailViewData.makeViewData(model: detail)
             }
