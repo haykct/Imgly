@@ -15,9 +15,11 @@ struct ItemsList: View {
     var body: some View {
         List($items, id: \.listID, editActions: .all) { $item in
             if item.children.isEmpty {
-                if item.id != nil {
+                if let id = item.id {
                     NavigationLink {
-                        EntryDetailView()
+                        let viewModel = EntryDetailViewModel(id: id)
+
+                        EntryDetailView(viewModel: viewModel)
                     } label: {
                         ListRow(label: item.label ?? LocalizationKeys.notAvailable)
                     }

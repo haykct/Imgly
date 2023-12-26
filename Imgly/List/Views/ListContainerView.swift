@@ -10,17 +10,17 @@ import SwiftUI
 struct ListContainerView: View {
     // MARK: Public properties
 
-    @StateObject var listViewModel: ListViewModel
+    @StateObject var viewModel: ListViewModel
 
     var body: some View {
-        ItemsList(items: $listViewModel.listItems)
+        ItemsList(items: $viewModel.listItems)
             .onFirstAppear {
-                listViewModel.requestListData()
+                viewModel.requestListData()
             }
     }
 }
 
 #Preview {
-    ListContainerView(listViewModel: ListViewModel())
+    ListContainerView(viewModel: ListViewModel())
         .environmentObject(ThemeManager())
 }

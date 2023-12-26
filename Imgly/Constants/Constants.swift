@@ -33,5 +33,5 @@ enum Colors {
 }
 
 enum BaseUrls {
-    static let listApi = "https://ubique.img.ly/"
+    static let imglyApi = "https://ubique.img.ly/"
 }
