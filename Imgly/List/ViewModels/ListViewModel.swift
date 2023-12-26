@@ -10,7 +10,9 @@ import Combine
 final class ListViewModel: ObservableObject {
     // MARK: Public properties
 
-    @Published var listItems: [ListModel] = []
+    // Declared listItems as an optional to prevent spinner becoming
+    // visible again after deleting all items in list.
+    @Published var listItems: [ListModel]?
     @Published var networkError: NetworkError?
 
     // MARK: Private properties

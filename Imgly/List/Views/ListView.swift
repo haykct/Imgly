@@ -13,17 +13,20 @@ struct ListView: View {
     @StateObject var viewModel: ListViewModel
 
     var body: some View {
-        if let error = viewModel.networkError {
-            ErrorView(error: error, titleText: LocalizationKeys.list)
-        } else {
-            if viewModel.listItems.isEmpty {
-                Spinner(titleText: LocalizationKeys.list)
-                    .onFirstAppear {
-                        viewModel.requestListData()
-                    }
+        VStack {
+            if let error = viewModel.networkError {
+                ErrorView(error: error, titleText: LocalizationKeys.list)
             } else {
-                ListContentView(items: $viewModel.listItems)
+                if viewModel.listItems == nil {
+                    Spinner(titleText: LocalizationKeys.list)
+                } else {
+                    // Wrapped inside a Binding to be able to unwrap optional listItems
+                    ListContentView(items: Binding($viewModel.listItems)!)
+                }
             }
+        }
+        .onFirstAppear {
+            viewModel.requestListData()
         }
     }
 }
