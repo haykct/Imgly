@@ -14,28 +14,17 @@ struct ListContentView: View {
 
     var body: some View {
         List($items, id: \.listID, editActions: .all) { $item in
-            if item.children.isEmpty {
+            NavigationLink {
                 if let id = item.id {
-                    NavigationLink {
-                        let viewModel = EntryDetailViewModel(id: id)
-
-                        EntryDetailView(titleText: item.label ?? "", viewModel: viewModel)
-                    } label: {
-                        ListRow(label: item.label ?? LocalizationKeys.notAvailable)
-                    }
-                    .listRowStyle()
+                    EntryDetailView(titleText: item.label ?? "",
+                                    viewModel: EntryDetailViewModel(id: id))
                 } else {
-                    ListRow(label: item.label ?? LocalizationKeys.notAvailable)
-                        .listRowStyle()
-                }
-            } else {
-                NavigationLink {
                     ListContentView(items: $item.children)
-                } label: {
-                    ListRow(label: item.label ?? LocalizationKeys.notAvailable)
                 }
-                .listRowStyle()
+            } label: {
+                ListRow(label: item.label ?? LocalizationKeys.notAvailable)
             }
+            .listRowStyle()
         }
         .listStyle(.plain)
         .background(Colors.listBackgroundGrey)

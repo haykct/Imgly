@@ -12,6 +12,17 @@
         }
       }
     },
+    "error" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Error"
+          }
+        }
+      }
+    },
     "last_modified_at" : {
       "extractionState" : "manual",
       "localizations" : {

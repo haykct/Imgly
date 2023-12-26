@@ -13,11 +13,11 @@ enum NetworkError: Error, Equatable {
     var descriptionKey: String {
         switch self {
         case .noConnection:
-            return "no_internet"
+            return LocalizationKeys.noInternet
         case .dataNotAvailable:
-            return "try_later"
+            return LocalizationKeys.tryLater
         case .unableToDecode:
-            return "unexpected_format"
+            return LocalizationKeys.unexpectedFormat
         }
     }
 }

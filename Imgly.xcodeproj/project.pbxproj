@@ -51,6 +51,7 @@
 		26FD092C2B3A1A0E0074DE59 /* EntryDetailViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD092B2B3A1A0E0074DE59 /* EntryDetailViewData.swift */; };
 		26FD092E2B3A76CA0074DE59 /* EntryDetailContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD092D2B3A76CA0074DE59 /* EntryDetailContentView.swift */; };
 		26FD09302B3A7A100074DE59 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD092F2B3A7A100074DE59 /* Spinner.swift */; };
+		26FD09322B3AFCD10074DE59 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD09312B3AFCD10074DE59 /* ErrorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +99,7 @@
 		26FD092B2B3A1A0E0074DE59 /* EntryDetailViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailViewData.swift; sourceTree = "<group>"; };
 		26FD092D2B3A76CA0074DE59 /* EntryDetailContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailContentView.swift; sourceTree = "<group>"; };
 		26FD092F2B3A7A100074DE59 /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		26FD09312B3AFCD10074DE59 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -375,6 +377,7 @@
 			children = (
 				26FD08C22B3660920074DE59 /* ThemeSettingsView.swift */,
 				26FD09052B3784280074DE59 /* ThemeSettingsButton.swift */,
+				26FD09312B3AFCD10074DE59 /* ErrorView.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -518,6 +521,7 @@
 				26FD08E52B3752A70074DE59 /* ListModel.swift in Sources */,
 				26FD092A2B3A19990074DE59 /* DateManager.swift in Sources */,
 				26FD09212B39AFCA0074DE59 /* EntryCreationInfoView.swift in Sources */,
+				26FD09322B3AFCD10074DE59 /* ErrorView.swift in Sources */,
 				26FD08E22B374F940074DE59 /* EntryDetailRequest.swift in Sources */,
 				26DDAD772B3507A1001856A6 /* Constants.swift in Sources */,
 				26FD090F2B379FCC0074DE59 /* ListContentView.swift in Sources */,
@@ -660,6 +664,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Imgly/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -690,6 +695,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Imgly/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;

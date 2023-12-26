@@ -12,6 +12,7 @@ struct MainView: View {
         ZStack(alignment: .bottomTrailing) {
             NavigationStack {
                 ListView(viewModel: ListViewModel())
+                    .navigationBarTitleDisplayMode(.inline)
             }
 
             ThemeSettingsButton()
