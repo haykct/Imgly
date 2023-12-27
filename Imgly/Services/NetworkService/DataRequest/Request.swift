@@ -7,6 +7,7 @@
 
 import Alamofire
 
+/// A request that provides info for a NetworkService request.
 protocol Request {
     var baseURL: String { get }
     var path: String { get }

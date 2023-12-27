@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// A type for identifying the theme.
 enum ThemeType: Int, CaseIterable {
     case blue, coral, brown, purple
 

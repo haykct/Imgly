@@ -7,11 +7,15 @@
 
 import SwiftUI
 
+/// An error screen that shows network related errors.
 struct ErrorView: View {
     // MARK: Private properties
 
     private let error: NetworkError
+
+    /// A text that shows the navigation title.
     private let titleText: String
+    /// A shared manager that updates the theme and changes the ThemeSettingsButton visibility.
     @EnvironmentObject private var themeManager: ThemeManager
 
     // MARK: Initializers

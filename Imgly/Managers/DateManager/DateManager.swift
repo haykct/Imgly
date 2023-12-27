@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// A manager to convert different date formats.
 struct DateManager {
     // MARK: Private properties
 

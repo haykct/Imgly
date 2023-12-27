@@ -7,11 +7,15 @@
 
 import SwiftUI
 
+/// A view that represents the content of the EntryDetaiView.
 struct EntryDetailContentView: View {
     // MARK: Private properties
 
+    /// A shared manager that updates the theme and changes the ThemeSettingsButton visibility.
     @EnvironmentObject private var themeManager: ThemeManager
+    /// A datasource that shows the data in EntryDetailContentView.
     private let viewData: EntryDetailViewData
+    /// A text that shows the navigation title.
     private let titleText: String
 
     // MARK: Initializers

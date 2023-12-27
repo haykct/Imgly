@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// A model that decodes data from the network for the EntryDetailView.
 struct EntryDetailModel: Decodable {
     let id: String?
     let createdAt: String?

@@ -7,10 +7,12 @@
 
 import SwiftUI
 
+/// A row that represents a single item in the ListContentView.
 struct ListRow: View {
     // MARK: Private properties
 
     private let label: String
+    /// A shared manager that updates the theme and changes the ThemeSettingsButton visibility.
     @EnvironmentObject private var themeManager: ThemeManager
 
     // MARK: Initializers

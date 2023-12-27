@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// A view modifier that is called only once when the view appears.
 private struct FirstAppearModifier: ViewModifier {
     // MARK: Private properties
 

@@ -10,12 +10,16 @@ import Combine
 final class EntryDetailViewModel: ObservableObject {
     // MARK: Public properties
 
+    /// A datasource that shows the data in EntryDetailContentView.
     @Published var viewData: EntryDetailViewData?
+    /// A property that notifies about network errors.
     @Published var networkError: NetworkError?
 
     // MARK: Private properties
 
+    /// A service for sending network requests.
     @Injected private var networkService: NetworkService
+    /// Entry id.
     private let id: String
     private var cancellable: AnyCancellable?
 
@@ -27,6 +31,8 @@ final class EntryDetailViewModel: ObservableObject {
 
     // MARK: Public methods
 
+    ///  A method that asynchronously fetches data from the network.
+    ///  After getting the data it notifies the EntryDetailView.
     func requestDetailData() {
         let request = EntryDetailRequest(id: id)
 

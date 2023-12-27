@@ -7,6 +7,7 @@
 
 import Swinject
 
+/// A dependency injection container.
 class Injection {
     // MARK: Public properties
 

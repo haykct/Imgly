@@ -7,8 +7,10 @@
 
 import SwiftUI
 
+/// A spinner that indicates the loading status during asynchronous processes.
 struct Spinner: View {
     // MARK: Private properties
+    /// A text that shows the navigation title.
     private let titleText: String
 
     // MARK: Initializers

@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// A View that shows colors to change the theme of the app.
 struct ThemeSettingsView: View {
     // MARK: Public properties
 
@@ -14,6 +15,7 @@ struct ThemeSettingsView: View {
 
     // MARK: Private properties
 
+    /// A shared manager that updates the theme and changes the ThemeSettingsButton visibility.
     @EnvironmentObject private var themeManager: ThemeManager
 
     var body: some View {

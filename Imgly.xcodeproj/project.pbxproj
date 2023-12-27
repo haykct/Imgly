@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		264EDFC92B3B79C100B96425 /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264EDFC82B3B79C100B96425 /* NetworkServiceTests.swift */; };
+		2685744E2B3BAF3B005DD70B /* Mocker in Frameworks */ = {isa = PBXBuildFile; productRef = 2685744D2B3BAF3B005DD70B /* Mocker */; };
 		269649D72B35FA750036A3DD /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269649D62B35FA750036A3DD /* ThemeManager.swift */; };
 		26DDAD492B3353F5001856A6 /* ImglyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DDAD482B3353F5001856A6 /* ImglyApp.swift */; };
 		26DDAD4B2B3353F5001856A6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DDAD4A2B3353F5001856A6 /* MainView.swift */; };
@@ -54,7 +56,19 @@
 		26FD09322B3AFCD10074DE59 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FD09312B3AFCD10074DE59 /* ErrorView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		264EDFCA2B3B79C100B96425 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26DDAD3D2B3353F5001856A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26DDAD442B3353F5001856A6;
+			remoteInfo = Imgly;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		264EDFC62B3B79C100B96425 /* ImglyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImglyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		264EDFC82B3B79C100B96425 /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
 		269649D62B35FA750036A3DD /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		26DDAD452B3353F5001856A6 /* Imgly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Imgly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26DDAD482B3353F5001856A6 /* ImglyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImglyApp.swift; sourceTree = "<group>"; };
@@ -103,23 +117,48 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		264EDFC32B3B79C100B96425 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		26DDAD422B3353F5001856A6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				26DDAD582B34B3AB001856A6 /* Alamofire in Frameworks */,
 				26DDAD5B2B34B463001856A6 /* Swinject in Frameworks */,
+				2685744E2B3BAF3B005DD70B /* Mocker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		264EDFC72B3B79C100B96425 /* ImglyTests */ = {
+			isa = PBXGroup;
+			children = (
+				264EDFC82B3B79C100B96425 /* NetworkServiceTests.swift */,
+			);
+			path = ImglyTests;
+			sourceTree = "<group>";
+		};
+		264EDFE32B3BA17500B96425 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		26DDAD3C2B3353F5001856A6 = {
 			isa = PBXGroup;
 			children = (
 				26DDAD472B3353F5001856A6 /* Imgly */,
+				264EDFC72B3B79C100B96425 /* ImglyTests */,
 				26DDAD462B3353F5001856A6 /* Products */,
+				264EDFE32B3BA17500B96425 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				26DDAD452B3353F5001856A6 /* Imgly.app */,
+				264EDFC62B3B79C100B96425 /* ImglyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -393,6 +433,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		264EDFC52B3B79C100B96425 /* ImglyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 264EDFCE2B3B79C100B96425 /* Build configuration list for PBXNativeTarget "ImglyTests" */;
+			buildPhases = (
+				264EDFC22B3B79C100B96425 /* Sources */,
+				264EDFC32B3B79C100B96425 /* Frameworks */,
+				264EDFC42B3B79C100B96425 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				264EDFCB2B3B79C100B96425 /* PBXTargetDependency */,
+			);
+			name = ImglyTests;
+			packageProductDependencies = (
+			);
+			productName = ImglyTests;
+			productReference = 264EDFC62B3B79C100B96425 /* ImglyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		26DDAD442B3353F5001856A6 /* Imgly */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26DDAD532B3353F7001856A6 /* Build configuration list for PBXNativeTarget "Imgly" */;
@@ -410,6 +470,7 @@
 			packageProductDependencies = (
 				26DDAD572B34B3AB001856A6 /* Alamofire */,
 				26DDAD5A2B34B463001856A6 /* Swinject */,
+				2685744D2B3BAF3B005DD70B /* Mocker */,
 			);
 			productName = Imgly;
 			productReference = 26DDAD452B3353F5001856A6 /* Imgly.app */;
@@ -425,6 +486,10 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					264EDFC52B3B79C100B96425 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 26DDAD442B3353F5001856A6;
+					};
 					26DDAD442B3353F5001856A6 = {
 						CreatedOnToolsVersion = 15.0;
 					};
@@ -442,17 +507,26 @@
 			packageReferences = (
 				26DDAD562B34B3AB001856A6 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				26DDAD592B34B463001856A6 /* XCRemoteSwiftPackageReference "Swinject" */,
+				264EDFCF2B3B7B3D00B96425 /* XCRemoteSwiftPackageReference "Mocker" */,
 			);
 			productRefGroup = 26DDAD462B3353F5001856A6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				26DDAD442B3353F5001856A6 /* Imgly */,
+				264EDFC52B3B79C100B96425 /* ImglyTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		264EDFC42B3B79C100B96425 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		26DDAD432B3353F5001856A6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -492,6 +566,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		264EDFC22B3B79C100B96425 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				264EDFC92B3B79C100B96425 /* NetworkServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		26DDAD412B3353F5001856A6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -536,7 +618,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		264EDFCB2B3B79C100B96425 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26DDAD442B3353F5001856A6 /* Imgly */;
+			targetProxy = 264EDFCA2B3B79C100B96425 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		264EDFCC2B3B79C100B96425 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Hayrapetyan.ImglyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Imgly.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Imgly";
+			};
+			name = Debug;
+		};
+		264EDFCD2B3B79C100B96425 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Hayrapetyan.ImglyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Imgly.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Imgly";
+			};
+			name = Release;
+		};
 		26DDAD512B3353F7001856A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -574,6 +700,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTING_SEARCH_PATHS = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -637,6 +764,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTING_SEARCH_PATHS = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -666,6 +794,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Imgly/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Imgly/Plists/Info.plist;
@@ -697,6 +826,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Imgly/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Imgly/Plists/Info.plist;
@@ -721,6 +851,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		264EDFCE2B3B79C100B96425 /* Build configuration list for PBXNativeTarget "ImglyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				264EDFCC2B3B79C100B96425 /* Debug */,
+				264EDFCD2B3B79C100B96425 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		26DDAD402B3353F5001856A6 /* Build configuration list for PBXProject "Imgly" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -742,6 +881,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		264EDFCF2B3B7B3D00B96425 /* XCRemoteSwiftPackageReference "Mocker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WeTransfer/Mocker";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.1;
+			};
+		};
 		26DDAD562B34B3AB001856A6 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -761,6 +908,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		2685744D2B3BAF3B005DD70B /* Mocker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 264EDFCF2B3B7B3D00B96425 /* XCRemoteSwiftPackageReference "Mocker" */;
+			productName = Mocker;
+		};
 		26DDAD572B34B3AB001856A6 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 26DDAD562B34B3AB001856A6 /* XCRemoteSwiftPackageReference "Alamofire" */;
