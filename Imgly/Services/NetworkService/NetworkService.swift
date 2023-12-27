@@ -9,23 +9,29 @@ import Foundation
 import Alamofire
 import Combine
 
+/// A service for sending http requests.
 protocol NetworkService {
     func request<Response>(_ request: Request) -> AnyPublisher<Response, NetworkError> where Response: Decodable
 }
 
+/// Defaul implementation for NetworkService.
 final class DefaultNetworkService: NetworkService {
     // MARK: Private properties
-
+    
+    /// A session for network requests.
     private let session: Session
 
     // MARK: Initializers
 
     init(session: Session = AF) {
-        self.session = session
+        self.session =  session
     }
 
     // MARK: Public methods
-
+    
+    /// A methods that fetches data from the network asynchronously.
+    /// - Parameter request: A request that provides info for a NetworkService request.
+    /// - Returns: Publisher for observing the network response.
     func request<Response>(_ request: Request) -> AnyPublisher<Response, NetworkError> where Response: Decodable {
         session
             .request(request.url)

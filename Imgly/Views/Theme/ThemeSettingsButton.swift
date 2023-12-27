@@ -7,9 +7,11 @@
 
 import SwiftUI
 
+/// A button that shows ThemeSettingsView.
 struct ThemeSettingsButton: View {
     // MARK: Private properties
 
+    /// A shared manager that updates the theme and changes the ThemeSettingsButton visibility.
     @EnvironmentObject private var themeManager: ThemeManager
     @State private var isColorSheetOpen = false
 

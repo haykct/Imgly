@@ -12,16 +12,21 @@ final class ListViewModel: ObservableObject {
 
     // Declared listItems as an optional to prevent spinner becoming
     // visible again after deleting all items in list.
+    /// A datasource that shows the data in ListContentView.
     @Published var listItems: [ListModel]?
+    /// A property that notifies anbout network errors.
     @Published var networkError: NetworkError?
 
     // MARK: Private properties
 
+    /// A service for sending network requests.
     @Injected private var networkService: NetworkService
     private var cancellable: AnyCancellable?
 
     // MARK: Public methods
 
+    ///  A method that asynchronously fetches data from the network.
+    ///  After getting the data it notifies the ListView.
     func requestListData() {
         let request = ListRequest()
 

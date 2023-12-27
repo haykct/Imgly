@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// A view modifier that adds app specific style for list rows.
 private struct ListRowModifier: ViewModifier {
     func body(content: Content) -> some View {
         content

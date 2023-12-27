@@ -7,9 +7,11 @@
 
 import SwiftUI
 
+/// A view that shows the list data.
 struct ListView: View {
     // MARK: Public properties
 
+    /// A bridging layer for the ListModel and the ListView.
     @StateObject var viewModel: ListViewModel
 
     var body: some View {

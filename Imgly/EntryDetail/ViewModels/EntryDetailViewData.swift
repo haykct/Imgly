@@ -5,6 +5,7 @@
 //  Created by Hayk Hayrapetyan on 25.12.23.
 //
 
+/// A layer that creates a final representation of the data to show it in EntryDetaiView.
 struct EntryDetailViewData {
     // MARK: Private properties
 
@@ -22,7 +23,10 @@ struct EntryDetailViewData {
     let lastModifiedAt: String
 
     // MARK: Public methods
-
+    
+    /// A static methods that creates a viewData from a model for the final representation.
+    /// - Parameter model: A model to be modified.
+    /// - Returns: A viewData to show in EntryDetailContentView.
     static func makeViewData(model: EntryDetailModel) -> EntryDetailViewData {
         let dateManager = DateManager()
         var convertedCreatedAt = empty

@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// A view modifier that applies app specific styles to the navigation bar.
 private struct AppNavigationBarModifier: ViewModifier {
     // MARK: Private properties
 

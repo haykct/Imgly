@@ -5,6 +5,7 @@
 //  Created by Hayk Hayrapetyan on 23.12.23.
 //
 
+/// A type to handle network errors.
 enum NetworkError: Error, Equatable {
     case noConnection
     case dataNotAvailable

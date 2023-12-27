@@ -7,14 +7,18 @@
 
 import SwiftUI
 
+/// A view that shows the list detail info.
 struct EntryDetailView: View {
     // MARK: Public properties
 
+    /// A text that shows the navigation title.
     let titleText: String
+    /// A bridging layer for the EntryDetailModel and the EntryDetailView.
     @StateObject var viewModel: EntryDetailViewModel
 
     // MARK: Private properties
 
+    /// A shared manager that updates the theme and changes the ThemeSettingsButton visibility.
     @EnvironmentObject private var themeManager: ThemeManager
 
     var body: some View {

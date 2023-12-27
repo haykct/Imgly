@@ -7,10 +7,12 @@
 
 import SwiftUI
 
+/// A view that shows an info about the entry creation date and author.
 struct EntryCreationInfoView: View {
     // MARK: Private properties
 
     private let text: String
+    // A shared manager that updates the theme and changes the ThemeSettingsButton visibility.
     @EnvironmentObject private var themeManager: ThemeManager
 
     // MARK: Initializers

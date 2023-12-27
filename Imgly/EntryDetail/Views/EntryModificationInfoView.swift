@@ -7,9 +7,11 @@
 
 import SwiftUI
 
+/// A view that shows an info about the entry modification date and author.
 struct EntryModificationInfoView: View {
     // MARK: Private properties
 
+    /// A text that shows the navigation title.
     private let titleText: String
     private let dateText: String
 
