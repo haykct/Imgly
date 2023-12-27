@@ -85,6 +85,7 @@
 		26DDAD792B35B6BD001856A6 /* ThemeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeType.swift; sourceTree = "<group>"; };
 		26DDAD7C2B35BCC0001856A6 /* ThemeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeProtocol.swift; sourceTree = "<group>"; };
 		26DDAD7E2B35BCF4001856A6 /* Themes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Themes.swift; sourceTree = "<group>"; };
+		26FB01E32B3C311C0001B3B6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		26FD08C02B3660100074DE59 /* ListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRow.swift; sourceTree = "<group>"; };
 		26FD08C22B3660920074DE59 /* ThemeSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeSettingsView.swift; sourceTree = "<group>"; };
 		26FD08C42B3660E00074DE59 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
@@ -159,6 +160,7 @@
 				264EDFC72B3B79C100B96425 /* ImglyTests */,
 				26DDAD462B3353F5001856A6 /* Products */,
 				264EDFE32B3BA17500B96425 /* Frameworks */,
+				26FB01E32B3C311C0001B3B6 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
