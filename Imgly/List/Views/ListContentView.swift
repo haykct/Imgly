@@ -10,7 +10,7 @@ import SwiftUI
 /// A view that represents the content of the ListView.
 struct ListContentView: View {
     // MARK: Public properties
-    
+
     /// A data that ListContentView shows.
     /// Updates the original data in ListViewModel after its own update.
     @Binding private(set) var items: [ListModel]

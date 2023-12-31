@@ -8,6 +8,7 @@
 import Foundation
 import Alamofire
 import Combine
+import Mocker
 
 /// A service for sending http requests.
 protocol NetworkService {
@@ -17,23 +18,33 @@ protocol NetworkService {
 /// Defaul implementation for NetworkService.
 final class DefaultNetworkService: NetworkService {
     // MARK: Private properties
-    
+
     /// A session for network requests.
     private let session: Session
 
     // MARK: Initializers
 
     init(session: Session = AF) {
-        self.session =  session
+#if DEBUG
+        self.session = UITestConfig.isUITestingMode ? UITestConfig.session : session
+#else
+        self.session = session
+#endif
     }
 
     // MARK: Public methods
-    
+
     /// A methods that fetches data from the network asynchronously.
     /// - Parameter request: A request that provides info for a NetworkService request.
     /// - Returns: Publisher for observing the network response.
     func request<Response>(_ request: Request) -> AnyPublisher<Response, NetworkError> where Response: Decodable {
-        session
+#if DEBUG
+        if UITestConfig.isUITestingMode {
+            Mocker.removeAll()
+            UITestConfig.registerMock(withUrl: request.url)
+        }
+#endif
+        return session
             .request(request.url)
             .validate(statusCode: 200 ... 399)
             .publishData()

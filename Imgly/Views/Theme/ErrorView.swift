@@ -32,6 +32,7 @@ struct ErrorView: View {
                 .frame(width: 95, height: 110)
                 .padding(EdgeInsets(top: 0, leading: 22, bottom: 50, trailing: 0))
                 .foregroundStyle(themeManager.selectedTheme.primaryColor)
+                .accessibilityIdentifier("detailErrorImage")
             Text(LocalizationKeys.error)
                 .font(.custom(Fonts.Inter.bold, size: 22))
                 .foregroundStyle(Colors.entryDetailGrey)

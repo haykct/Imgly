@@ -10,6 +10,8 @@
 		264EDFC92B3B79C100B96425 /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264EDFC82B3B79C100B96425 /* NetworkServiceTests.swift */; };
 		2685744E2B3BAF3B005DD70B /* Mocker in Frameworks */ = {isa = PBXBuildFile; productRef = 2685744D2B3BAF3B005DD70B /* Mocker */; };
 		269649D72B35FA750036A3DD /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269649D62B35FA750036A3DD /* ThemeManager.swift */; };
+		26967A122B40FC1F005CC693 /* ListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26967A112B40FC1F005CC693 /* ListUITests.swift */; };
+		26967A1A2B41E36F005CC693 /* UITestConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26967A192B41E36F005CC693 /* UITestConfig.swift */; };
 		26DDAD492B3353F5001856A6 /* ImglyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DDAD482B3353F5001856A6 /* ImglyApp.swift */; };
 		26DDAD4B2B3353F5001856A6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DDAD4A2B3353F5001856A6 /* MainView.swift */; };
 		26DDAD4D2B3353F7001856A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26DDAD4C2B3353F7001856A6 /* Images.xcassets */; };
@@ -64,12 +66,23 @@
 			remoteGlobalIDString = 26DDAD442B3353F5001856A6;
 			remoteInfo = Imgly;
 		};
+		26967A132B40FC1F005CC693 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26DDAD3D2B3353F5001856A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26DDAD442B3353F5001856A6;
+			remoteInfo = Imgly;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		26304D2F2B40BE8800225A09 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		264EDFC62B3B79C100B96425 /* ImglyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImglyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		264EDFC82B3B79C100B96425 /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
 		269649D62B35FA750036A3DD /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		26967A0D2B40FC1F005CC693 /* ImglyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImglyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		26967A112B40FC1F005CC693 /* ListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUITests.swift; sourceTree = "<group>"; };
+		26967A192B41E36F005CC693 /* UITestConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestConfig.swift; sourceTree = "<group>"; };
 		26DDAD452B3353F5001856A6 /* Imgly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Imgly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26DDAD482B3353F5001856A6 /* ImglyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImglyApp.swift; sourceTree = "<group>"; };
 		26DDAD4A2B3353F5001856A6 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -125,6 +138,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		26967A0A2B40FC1F005CC693 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		26DDAD422B3353F5001856A6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -149,8 +169,25 @@
 		264EDFE32B3BA17500B96425 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				26304D2F2B40BE8800225A09 /* XCTest.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		26967A0E2B40FC1F005CC693 /* ImglyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				26967A112B40FC1F005CC693 /* ListUITests.swift */,
+			);
+			path = ImglyUITests;
+			sourceTree = "<group>";
+		};
+		26967A182B41E354005CC693 /* UITestConfig */ = {
+			isa = PBXGroup;
+			children = (
+				26967A192B41E36F005CC693 /* UITestConfig.swift */,
+			);
+			path = UITestConfig;
 			sourceTree = "<group>";
 		};
 		26DDAD3C2B3353F5001856A6 = {
@@ -158,6 +195,7 @@
 			children = (
 				26DDAD472B3353F5001856A6 /* Imgly */,
 				264EDFC72B3B79C100B96425 /* ImglyTests */,
+				26967A0E2B40FC1F005CC693 /* ImglyUITests */,
 				26DDAD462B3353F5001856A6 /* Products */,
 				264EDFE32B3BA17500B96425 /* Frameworks */,
 				26FB01E32B3C311C0001B3B6 /* README.md */,
@@ -169,6 +207,7 @@
 			children = (
 				26DDAD452B3353F5001856A6 /* Imgly.app */,
 				264EDFC62B3B79C100B96425 /* ImglyTests.xctest */,
+				26967A0D2B40FC1F005CC693 /* ImglyUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -325,6 +364,7 @@
 			children = (
 				26FD09092B378A340074DE59 /* DI */,
 				26FD09022B377FC80074DE59 /* UIModifiers */,
+				26967A182B41E354005CC693 /* UITestConfig */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -455,6 +495,24 @@
 			productReference = 264EDFC62B3B79C100B96425 /* ImglyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		26967A0C2B40FC1F005CC693 /* ImglyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26967A152B40FC1F005CC693 /* Build configuration list for PBXNativeTarget "ImglyUITests" */;
+			buildPhases = (
+				26967A092B40FC1F005CC693 /* Sources */,
+				26967A0A2B40FC1F005CC693 /* Frameworks */,
+				26967A0B2B40FC1F005CC693 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26967A142B40FC1F005CC693 /* PBXTargetDependency */,
+			);
+			name = ImglyUITests;
+			productName = ImglyUITests;
+			productReference = 26967A0D2B40FC1F005CC693 /* ImglyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		26DDAD442B3353F5001856A6 /* Imgly */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26DDAD532B3353F7001856A6 /* Build configuration list for PBXNativeTarget "Imgly" */;
@@ -492,6 +550,10 @@
 						CreatedOnToolsVersion = 15.0;
 						TestTargetID = 26DDAD442B3353F5001856A6;
 					};
+					26967A0C2B40FC1F005CC693 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 26DDAD442B3353F5001856A6;
+					};
 					26DDAD442B3353F5001856A6 = {
 						CreatedOnToolsVersion = 15.0;
 					};
@@ -517,12 +579,20 @@
 			targets = (
 				26DDAD442B3353F5001856A6 /* Imgly */,
 				264EDFC52B3B79C100B96425 /* ImglyTests */,
+				26967A0C2B40FC1F005CC693 /* ImglyUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		264EDFC42B3B79C100B96425 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26967A0B2B40FC1F005CC693 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -576,6 +646,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		26967A092B40FC1F005CC693 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26967A122B40FC1F005CC693 /* ListUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		26DDAD412B3353F5001856A6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -609,6 +687,7 @@
 				26FD08E22B374F940074DE59 /* EntryDetailRequest.swift in Sources */,
 				26DDAD772B3507A1001856A6 /* Constants.swift in Sources */,
 				26FD090F2B379FCC0074DE59 /* ListContentView.swift in Sources */,
+				26967A1A2B41E36F005CC693 /* UITestConfig.swift in Sources */,
 				26DDAD7A2B35B6BD001856A6 /* ThemeType.swift in Sources */,
 				26FD09112B38D1C40074DE59 /* AppNavigationBarModifier.swift in Sources */,
 				26FD08C52B3660E00074DE59 /* ListView.swift in Sources */,
@@ -626,6 +705,11 @@
 			target = 26DDAD442B3353F5001856A6 /* Imgly */;
 			targetProxy = 264EDFCA2B3B79C100B96425 /* PBXContainerItemProxy */;
 		};
+		26967A142B40FC1F005CC693 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26DDAD442B3353F5001856A6 /* Imgly */;
+			targetProxy = 26967A132B40FC1F005CC693 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -637,6 +721,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Hayrapetyan.ImglyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -655,6 +740,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Hayrapetyan.ImglyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -662,6 +748,42 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Imgly.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Imgly";
+			};
+			name = Release;
+		};
+		26967A162B40FC1F005CC693 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Hayrapetyan.ImglyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Imgly;
+			};
+			name = Debug;
+		};
+		26967A172B40FC1F005CC693 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Hayrapetyan.ImglyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Imgly;
 			};
 			name = Release;
 		};
@@ -858,6 +980,15 @@
 			buildConfigurations = (
 				264EDFCC2B3B79C100B96425 /* Debug */,
 				264EDFCD2B3B79C100B96425 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26967A152B40FC1F005CC693 /* Build configuration list for PBXNativeTarget "ImglyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26967A162B40FC1F005CC693 /* Debug */,
+				26967A172B40FC1F005CC693 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
