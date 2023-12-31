@@ -21,7 +21,7 @@ struct ListModel: Decodable, Hashable {
         case id, label, children
     }
 
-    // Implemented init manually to get default value for children property.
+    // Implemented init manually to avoid decoding of listID and get default value for children property.
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
 
