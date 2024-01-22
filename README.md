@@ -11,8 +11,7 @@ This app shows a list of records and detailed informartion about those records.
 1. Make sure you have the Xcode version 14.0 or above installed on your computer.
 2. Download the Imgly project files from the repository.
 3. Open the project files in Xcode.
-4. Review the code and make sure you understand what it does.
-5. Run the active scheme.
+4. Run the active scheme.
 
 #  Usage
 
