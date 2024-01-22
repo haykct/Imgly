@@ -46,7 +46,7 @@ This app shows a list of records and detailed informartion about those records.
 
 # Dependencies
 
-* 'Alamofire' networking library that ensures that the message reaches everyone in the world.
-* 'Mocker' is a third party lib to help easily implement various tests.
+* 'Alamofire' is a networking library that ensures that the message reaches everyone in the world.
+* 'Mocker' is a third party library to help easily implement various tests.
 * 'Swinject' is a dependency injection framework that allows you to get loosely-coupled components in your app.
 
